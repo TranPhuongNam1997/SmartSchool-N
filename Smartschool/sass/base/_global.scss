@@ -1,0 +1,78 @@
+// ======================================================
+// Base :: Global
+// ======================================================
+
+*,*:before,*:after{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "SVN-Gotham Rounded";
+  //font-weight: 500;
+
+}
+.body-wrap{
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+html, body {
+  height: 100%;
+}
+
+.push{
+  height: 147px;
+}
+.dp-flex-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.overlay{
+  background: rgba(22, 73, 137, 0.38823529411764707);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+select{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  position: relative;
+  background: url("../img/icon-caret-down-02.svg");
+  background-repeat: no-repeat;
+  background-position: center right 16px;
+  background-size: 8px 5px;
+  &.select-icon-up{
+    background: $c-wh url("../img/icon-up-select-03.svg") no-repeat;
+    background-position: center right 16px;
+    background-size: 8px 5px;
+  }
+}
+
+.overlay{
+  background: #000;
+  opacity: 0.5;
+  z-index: 1;
+  cursor: pointer;
+}
+.row-flex{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+}

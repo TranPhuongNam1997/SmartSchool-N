@@ -1,0 +1,24 @@
+// ======================================================
+// Layout :: Header
+// ======================================================
+
+.change-icon-mb{
+  .line-1{
+    transform: translateY(9px) translateX(0) rotate(45deg);
+    transition: all 0.3s;
+    @include lessdesktop{
+      transform: translateY(8px) translateX(0) rotate(45deg);
+    }
+  }
+  .line-2{
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  .line-3{
+    transform: translateY(-9px) translateX(0) rotate(-46deg);
+    transition: all 0.3s;
+    @include lessdesktop{
+      transform: translateY(-6px) translateX(0) rotate(-46deg);
+    }
+  }
+}

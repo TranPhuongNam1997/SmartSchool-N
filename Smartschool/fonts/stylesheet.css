@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'SVN-Gotham Rounded';
+    src: url('SVN-GothamRoundedMedium.eot');
+    src: url('SVN-GothamRoundedMedium.eot?#iefix') format('embedded-opentype'),
+        url('SVN-GothamRoundedMedium.woff2') format('woff2'),
+        url('SVN-GothamRoundedMedium.woff') format('woff'),
+        url('SVN-GothamRoundedMedium.ttf') format('truetype'),
+        url('SVN-GothamRoundedMedium.svg#SVN-GothamRoundedMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham Rounded';
+    src: url('SVN-GothamRoundedLight.eot');
+    src: url('SVN-GothamRoundedLight.eot?#iefix') format('embedded-opentype'),
+        url('SVN-GothamRoundedLight.woff2') format('woff2'),
+        url('SVN-GothamRoundedLight.woff') format('woff'),
+        url('SVN-GothamRoundedLight.ttf') format('truetype'),
+        url('SVN-GothamRoundedLight.svg#SVN-GothamRoundedLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham Rounded';
+    src: url('SVN-GothamRoundedItalic.eot');
+    src: url('SVN-GothamRoundedItalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-GothamRoundedItalic.woff2') format('woff2'),
+        url('SVN-GothamRoundedItalic.woff') format('woff'),
+        url('SVN-GothamRoundedItalic.ttf') format('truetype'),
+        url('SVN-GothamRoundedItalic.svg#SVN-GothamRoundedItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham Rounded';
+    src: url('SVN-GothamRoundedMediumItalic.eot');
+    src: url('SVN-GothamRoundedMediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-GothamRoundedMediumItalic.woff2') format('woff2'),
+        url('SVN-GothamRoundedMediumItalic.woff') format('woff'),
+        url('SVN-GothamRoundedMediumItalic.ttf') format('truetype'),
+        url('SVN-GothamRoundedMediumItalic.svg#SVN-GothamRoundedMediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham Rounded';
+    src: url('SVN-GothamRoundedLightItalic.eot');
+    src: url('SVN-GothamRoundedLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-GothamRoundedLightItalic.woff2') format('woff2'),
+        url('SVN-GothamRoundedLightItalic.woff') format('woff'),
+        url('SVN-GothamRoundedLightItalic.ttf') format('truetype'),
+        url('SVN-GothamRoundedLightItalic.svg#SVN-GothamRoundedLightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham Rounded';
+    src: url('SVN-GothamRoundedBold.eot');
+    src: url('SVN-GothamRoundedBold.eot?#iefix') format('embedded-opentype'),
+        url('SVN-GothamRoundedBold.woff2') format('woff2'),
+        url('SVN-GothamRoundedBold.woff') format('woff'),
+        url('SVN-GothamRoundedBold.ttf') format('truetype'),
+        url('SVN-GothamRoundedBold.svg#SVN-GothamRoundedBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham Rounded';
+    src: url('SVN-GothamRoundedBoldItalic.eot');
+    src: url('SVN-GothamRoundedBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-GothamRoundedBoldItalic.woff2') format('woff2'),
+        url('SVN-GothamRoundedBoldItalic.woff') format('woff'),
+        url('SVN-GothamRoundedBoldItalic.ttf') format('truetype'),
+        url('SVN-GothamRoundedBoldItalic.svg#SVN-GothamRoundedBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham Rounded';
+    src: url('SVN-GothamRounded.eot');
+    src: url('SVN-GothamRounded.eot?#iefix') format('embedded-opentype'),
+        url('SVN-GothamRounded.woff2') format('woff2'),
+        url('SVN-GothamRounded.woff') format('woff'),
+        url('SVN-GothamRounded.ttf') format('truetype'),
+        url('SVN-GothamRounded.svg#SVN-GothamRounded') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

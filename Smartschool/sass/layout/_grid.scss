@@ -1,0 +1,19 @@
+// ======================================================
+// Layout :: Grid
+// ======================================================
+
+
+.row-ss{
+  margin: 0 -6px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.col-pc-6{
+  padding: 0 10px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+}
