@@ -124,6 +124,15 @@
                 <div>
                     <img src="img/banner.png" alt="ảnh">
                 </div>
+                <div>
+                    <img src="img/banner.png" alt="ảnh">
+                </div>
+                <div>
+                    <img src="img/banner.png" alt="ảnh">
+                </div>
+                <div>
+                    <img src="img/banner.png" alt="ảnh">
+                </div>
 
             </div>
         </div>
@@ -184,6 +193,46 @@
                         <span>tiếng anh</span>
                     </a>
                 </div>
+                <div class="item-subject">
+                    <a href="#">
+                        <div class="block-img">
+                            <img src="img/icon-th-18.svg" alt="ảnh">
+                        </div>
+                        <span>toán học</span>
+                    </a>
+                </div>
+                <div class="item-subject">
+                    <a href="#">
+                            <span class="block-img">
+                                <img src="img/icon-vl-18.svg" alt="ảnh">
+                            </span>
+                        <span>vật lý</span>
+                    </a>
+                </div>
+                <div class="item-subject">
+                    <a href="#">
+                            <span class="block-img">
+                                <img src="img/icon-hh-19.svg" alt="ảnh">
+                            </span>
+                        <span>hóa học</span>
+                    </a>
+                </div>
+                <div class="item-subject">
+                    <a href="#">
+                            <span class="block-img">
+                                <img src="img/icon-thx-18.svg" alt="ảnh">
+                            </span>
+                        <span>tin học</span>
+                    </a>
+                </div>
+                <div class="item-subject">
+                    <a href="#">
+                            <span class="block-img">
+                                <img src="img/icon-ta-18.svg" alt="ảnh">
+                            </span>
+                        <span>tiếng anh</span>
+                    </a>
+                </div>
 
             </div>
         </div>
@@ -193,36 +242,42 @@
         <div class="container">
             <div class="slick-featured-lectures">
                 <div class="item-lesson">
-                    <a href="#">
+
                         <img src="img/bgnb-1.png" alt="ảnh">
 
-                        <div class="sub-lesson">
-                            <div class="flex-between">
-                                <div class="title-sub">TOÁN LỚP 9: GIẢI PHƯƠNG TRÌNH BẬC NHẤT</div>
-                                <div class="rate-lesson">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                            </div>
-                            <p class="sub-item-slide">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-                                enim ad minim veniam</p>
-                        </div>
-                    </a>
+<!--                        <div class="sub-lesson">-->
+<!--                            <div class="flex-between">-->
+<!--                                <div class="title-sub">TOÁN LỚP 9: GIẢI PHƯƠNG TRÌNH BẬC NHẤT</div>-->
+<!--                                <div class="rate-lesson">-->
+<!--                                    <i class="fa fa-star"></i>-->
+<!--                                    <i class="fa fa-star"></i>-->
+<!--                                    <i class="fa fa-star"></i>-->
+<!--                                    <i class="fa fa-star"></i>-->
+<!--                                    <i class="fa fa-star"></i>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <p class="sub-item-slide">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam-->
+<!--                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi-->
+<!--                                enim ad minim veniam</p>-->
+<!--                        </div>-->
+
                 </div>
                 <div class="item-lesson">
-                    <a href="#">
+
                         <img src="img/bgnb-1.png" alt="ảnh">
-                    </a>
+
                 </div>
                 <div class="item-lesson">
-                    <a href="#">
+
                         <img src="img/bgnb-1.png" alt="ảnh">
-                    </a>
+
                 </div>
+                <div class="item-lesson">
+
+                        <img src="img/bgnb-1.png" alt="ảnh">
+
+                </div>
+
             </div>
         </div>
     </section>
@@ -393,9 +448,10 @@
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
-            fade: true,
-            asNavFor: '.slider-nav',
+            // fade: true,
+            // asNavFor: '.slider-nav',
             autoplay: true,
+            autoplaySpeed: 2000,
         });
 
         // $('.slick-bs-course').slick({
@@ -429,34 +485,38 @@
                     }
                 }]
         });
-
-
         $('.slick-featured-lectures').slick({
+            dots: false,
+            infinite: true,
+            speed: 500,
+            centerPadding: '250px',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            arrows: true,
             centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 3,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
+            focusOnSelect: true,
+            responsive: [{
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
                 }
-            ]
+            },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
         });
     });
 </script>
+<style>
+
+</style>
 </body>
 </html>

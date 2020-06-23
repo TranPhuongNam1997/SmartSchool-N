@@ -856,4 +856,47 @@ input[type="radio"]:checked ~ label {
 button[data-ripple] {
   position: relative; }
 
+.slick-slide img {
+  width: 100%; }
+
+.slick-featured-lectures .item-lesson {
+  transform: scale(0.7); }
+
+.slick-featured-lectures .slick-slide {
+  margin: 0 -70px; }
+
+.slick-featured-lectures .slick-active .item-lesson {
+  transform: scale(1);
+  z-index: 1;
+  position: relative;
+  transition: all 0.3s 0.2s linear; }
+
+.slick-list.draggable:before {
+  content: '';
+  background: #1476C6;
+  width: 10px;
+  height: 356px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9; }
+
+.slick-list.draggable:after {
+  content: '';
+  background: #1476C6;
+  width: 10px;
+  height: 356px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9; }
+
+.item-lesson {
+  border: 15px solid #1476C6; }
+
+.slick-featured-lectures .slick-active .item-lesson {
+  border: none; }
+
 /*# sourceMappingURL=main.css.map */
