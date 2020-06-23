@@ -26,3 +26,117 @@
     background: rgb(8, 51, 107);
   }
 }
+footer{
+  background: $c-bll url("../img/bg-foot.png");
+  padding: 66px 0 33px;
+}
+.logo-foot{
+  margin-bottom: 34px;
+  a{
+    display: block;
+    line-height: 20px;
+    img{
+      height: 27px;
+    }
+  }
+}
+.slogan-compnany{
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: $c-yl;
+}
+.contact-company{
+  ul{
+    margin-bottom: 32px;
+    li{
+      margin-bottom: 16px;
+      span{
+        font-family: 'Roboto';
+        font-size: 12px;
+        color: #F2F5F9;
+      }
+      i{
+        margin-right: 10px;
+        color: #F2F5F9;
+      }
+    }
+  }
+}
+.connect-footer{
+  a{
+    margin-right: 15px;
+    i{
+      color: $c-yl;
+      font-weight: 700;
+      font-size: 13px;
+      transition: all 0.3s;
+    }
+    &:hover{
+      i{
+        animation: 0.5s xoay forwards;
+      }
+
+    }
+  }
+}
+.foot-right{
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 70px;
+  padding: 17px 48px;
+  margin-top: 58px;
+  .txt-register{
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: $c-yl;
+    font-weight: 700;
+  }
+  .email-regis{
+    border-radius: 30px;
+    background: #0065C8;
+    border: none;
+    width: 253px;
+    height: 45px;
+    outline: none;
+    padding: 0 36px;
+    color: #fff;
+
+    &::-webkit-input-placeholder { /* Edge */
+      color: #4FAEFC;
+      font-style: italic;
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #4FAEFC;
+      font-style: italic;
+    }
+
+    &::placeholder {
+      color: #4FAEFC;
+      font-style: italic;
+    }
+  }
+}
+.coppy-right{
+  margin-top: 57px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  color: #F2F5F9;
+}
+.btn-regis-now{
+  height: 45px;
+  width: 253px;
+  background: $c-yl;
+  color: $c-bl;
+  font-weight: 700;
+  border-radius: 30px;
+  border: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: all 0.3s;
+  &:hover{
+    box-shadow: 1px 2px 14px #838383;
+    transition: all 0.3s;
+  }
+}

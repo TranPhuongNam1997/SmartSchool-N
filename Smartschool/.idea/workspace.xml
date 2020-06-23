@@ -1,7 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30c15ec5-f1de-4da1-b9d8-b448bfeabd1b" name="Default Changelist" comment="" />
+    <list default="true" id="30c15ec5-f1de-4da1-b9d8-b448bfeabd1b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRounded.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRounded.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRounded.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRounded.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRounded.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedBold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedBold.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedBold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedBold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedBoldItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedBoldItalic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedBoldItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedBoldItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedItalic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedLight.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedLight.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedLight.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedLight.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedLightItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedLightItalic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedLightItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedLightItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedMedium.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedMedium.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedMedium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedMedium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedMedium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedMediumItalic.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedMediumItalic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedMediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedMediumItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/SVN-GothamRoundedMediumItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/css/mdb.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/libs/css/mdb.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/js/jquery-1.11.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/abstracts/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/base/_animation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_animation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/base/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/base/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/components/_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layout/_content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layout/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layout/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layout/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_navigation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css.map" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,10 +80,15 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1deePegeUblTzsKWNECoRqFN73N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/IRS_Responsive" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -41,10 +113,22 @@
       <option name="presentableId" value="Default" />
       <updated>1592789962491</updated>
       <workItem from="1592789963725" duration="1374000" />
+      <workItem from="1592876076330" duration="31694000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

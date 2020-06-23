@@ -13,9 +13,7 @@ body{
   color: #000;
   font-size: 14px;
   line-height: 16px;
-  font-family: "SVN-Gotham Rounded";
-  //font-weight: 500;
-
+  font-family: 'Helvetica Neue';
 }
 .body-wrap{
   position: relative;
@@ -69,10 +67,18 @@ select{
   z-index: 1;
   cursor: pointer;
 }
-.row-flex{
-  display: -ms-flexbox;
+.flex-center{
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 -8px;
+  align-items: center;
+}
+.flex-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pull-left{
+  float: left;
+}
+.pull-right{
+  float: right;
 }
