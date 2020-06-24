@@ -111,8 +111,32 @@
 $(document).ready(function () {
    $('.wrap-search i').click(function () {
        $('.block-seacrh').toggle();
-   })
-});
+   });
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= 300) {
+            $('.header-gd').addClass('fixed');
+        } else {
+            $('.header-gd').removeClass('fixed');
+        }
+    });
+
+    $(document).ready(function() {
+        $("a[href='#top']").click(function () {
+            $("html, body").animate({scrollTop: 0}, "slow");
+            return false;
+        });
+    });
+
+    // go top
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 300) {
+                $('#go_top').show();
+            }
+            else {
+                $('#go_top').hide();
+            }
+        });
+    });
 //effect button
 $(function($) {
 

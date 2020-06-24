@@ -23,8 +23,32 @@
   }
 }
 .header-gd{
+  background: #fff;
   box-shadow: 3px 4px 9px rgba(0, 0, 0, 0.41);
+
+  position: absolute;
+  width: 100%;
+  top: 0;
+  transition: all 0.3s;
+  z-index: 99;
+  &.fixed{
+    transition: all 1s;
+    position: fixed;
+    top: 0;
+    .head-wrap{
+      padding: 13px 0;
+      //transition: all 0.5s;
+      .logo h1 a{
+        line-height: 12px;
+        img{
+          height: 19px;
+          transition: all 0s;
+        }
+      }
+    }
+  }
 }
+
 
 .block-connect{
   a{

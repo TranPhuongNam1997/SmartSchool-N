@@ -51,32 +51,189 @@
   position: relative;
   transition: all 0.3s 0.2s linear;
 }
-.slick-list.draggable:before {
+.slick-featured-lectures .slick-list.draggable:before {
   content: '';
-  background: $c-bl;
-  width: 10px;
-  height: 356px;
+  background: $c-bll;
+  width: 14px;
+  height: 354px;
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 49%;
   transform: translateY(-50%);
   z-index: 9;
 }
-.slick-list.draggable:after {
+.slick-featured-lectures .slick-list.draggable:after {
   content: '';
-  background: $c-bl;
-  width: 10px;
-  height: 356px;
+  background: $c-bll;
+  width: 14px;
+  height: 354px;
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 49%;
   transform: translateY(-50%);
   z-index: 9;
 }
 
 .item-lesson {
-  border: 15px solid $c-bl;
+  border: 19px solid $c-bll;
 }
 .slick-featured-lectures .slick-active .item-lesson{
   border: none;
+}
+
+
+.slick-bs-course{
+  .slick-prev {
+    left: -42px;
+    &:before{
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f104";
+      font-size: 37px;
+      color: #C1C1C1;
+      opacity: 1;
+    }
+    &:hover{
+      &:before{
+        color: $c-bll;
+      }
+    }
+    @media (max-width: 1300px) {
+      left: 11px;
+      z-index: 9;
+      &:before{
+        color: #fff;
+        opacity: 1;
+      }
+      &:hover{
+        &:before{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .slick-next{
+    right: -42px;
+    &:before{
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f105";
+      font-size: 37px;
+      color: #C1C1C1;
+      opacity: 1;
+    }
+    &:hover{
+      &:before{
+        color: $c-bll;
+      }
+    }
+    @media (max-width: 1300px) {
+      right: 11px;
+      z-index: 9;
+      &:before{
+        color: #fff;
+        opacity: 1;
+      }
+      &:hover{
+        &:before{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .slick-prev, .slick-next{
+    top: 45%;
+  }
+
+}
+.slick-featured-lectures{
+  .slick-prev {
+    left: -42px;
+    &:before{
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f104";
+      font-size: 37px;
+      color: #C1C1C1;
+      opacity: 1;
+    }
+    &:hover{
+      &:before{
+        color: $c-bll;
+      }
+    }
+    @media (max-width: 1300px) {
+      left: 18px;
+      z-index: 9;
+      &:before{
+        color: #fff;
+        opacity: 1;
+      }
+      &:hover{
+        &:before{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .slick-next{
+    right: -42px;
+    &:before{
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f105";
+      font-size: 37px;
+      color: #C1C1C1;
+      opacity: 1;
+    }
+    &:hover{
+      &:before{
+        color: $c-bll;
+      }
+    }
+    @media (max-width: 1300px) {
+      right: 18px;
+      z-index: 9;
+      &:before{
+        color: #fff;
+        opacity: 1;
+      }
+      &:hover{
+        &:before{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .slick-prev, .slick-next{
+    top: 45%;
+  }
+
+}
+.slick-text-research {
+  .slick-prev {
+    right: 1px;
+    left: auto;
+    &:before{
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f104";
+      font-size: 29px;
+      color: $c-bll;
+    }
+  }
+  .slick-next{
+    right: -34px;
+    &:before{
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f105";
+      font-size: 29px;
+      color: $c-bll;
+    }
+  }
+  .slick-prev, .slick-next{
+    top: 108%;
+  }
+
 }
