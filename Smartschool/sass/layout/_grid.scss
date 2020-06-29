@@ -76,3 +76,131 @@
   position: relative;
 }
 
+.container-login{
+  max-width: 1159px;
+  padding: 0 42px;
+  margin: 0 auto;
+  @include tablet{
+    max-width: 1105px;
+    padding: 0 15px;
+  }
+}
+.row-login-42{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -42px;
+  @include tablet{
+    margin: 0 -15px;
+  }
+}
+.col-login-6{
+  padding: 0 42px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  @include tablet{
+    padding: 0 15px;
+  }
+  @include mobile-horizontal{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    .banner-login{
+      display: none;
+    }
+  }
+}
+
+.row-other-6{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -6px;
+}
+.col-other-6{
+  padding: 0 6px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+}
+
+.container-regis{
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  background: #fff;
+
+  @include tablet{
+    max-width: 1105px;
+    padding: 0 15px;
+  }
+}
+
+.row-regis-63{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -63px;
+  @include tablet{
+    margin: 0 -15px;
+  }
+
+}
+.col-regis-6{
+  padding: 0 63px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  @include tablet{
+    padding: 0 15px;
+  }
+  @include mobile-horizontal{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+
+.container-main{
+  max-width: 1216px;
+  padding: 0 8px;
+  margin: 0 auto;
+
+  @include tablet{
+    max-width: 1105px;
+    padding: 0 15px;
+  }
+}
+
+.row-main-8{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+
+}
+.col-main-17{
+  padding: 0 8px;
+  -ms-flex: 0 0 17%;
+  flex: 0 0 17%;
+  max-width: 17%;
+  position: relative;
+
+}
+.col-main-83{
+  padding: 0 8px;
+  -ms-flex: 0 0 83%;
+  flex: 0 0 83%;
+  max-width: 83%;
+  position: relative;
+
+}

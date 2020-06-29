@@ -34,16 +34,15 @@ input[type="checkbox"]:after {
   display: block;
   width: 18px;
   height: 18px;
-  //margin-right: 5px;
-  border: 1px solid #bbb;
+  border: 1px solid #90BEE3;
   -webkit-transition: 240ms;
   transition: 240ms;
-  border-radius: 50%;
+  border-radius: 3px;
   background: #fff;
 }
 input[type="checkbox"]:checked:after{
-  background-color: #F37021;
-  border-color: #F37021;
+  background-color: $c-bl;
+  border-color: $c-bl;
 }
 input[type="checkbox"]~label{
   cursor: pointer;
