@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Trang chủ</title>
+    <title>Khóa học đã mua</title>
 
     <link rel="stylesheet" href="libs/css/bootstrap.min.css">
 
@@ -189,30 +189,294 @@
 
                             <!-- Tab panes -->
                             <div class="tab-content">
-                                <div id="math" class="container tab-pane active"><br>
-                                    <h3>HOME</h3>
-                                    <div class="progress-tooltip">
-                                        <progress class="progress" value="30" max="100">30%</progress>
+                                <div id="math" class="tab-pane active">
+                                    <div class="block-white class-9">
+                                         <div class="wrap-progress flex-center">
+                                             <div class="class-block">
+                                                 <span class="text-class">Lớp</span>
+                                                 <span class="number-class">9</span>
+                                             </div>
+                                             <div class="block-progress">
+                                                 <div class="flex-between progress-top">
+                                                     <span>Đã hoàn thành <span>2/30</span> bài</span>
+                                                     <span>Bạn còn <span>28</span> bài chưa học</span>
+                                                 </div>
+                                                 <div class="progress-tooltip">
+                                                     <progress class="progress" value="30" max="100">30%</progress>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        <div class="block-lesson">
+                                            <!--nếu đã xem hết là class:   complete-view-->
+                                            <!--nếu đã chưa hết là class:   uncomplete-view-->
+                                            <!--nếu đã xem hết là class:   not-seen-->
+                                            <div class="row-lesson-5">
+                                                <div class="col-lesson-3 element-lesson complete-view">
+                                                    <a href="#" class="img-lesson">
+                                                        <img src="img/img-lesson.png" alt="ảnh">
+                                                        <span class="btn-play"><img src="img/icon-play-02.svg" alt="ảnh"></span>
+                                                        <span class="nb-minute"><span>15<sub>'</sub></span></span>
+                                                    </a>
+                                                    <h3 class="name-lesson">
+                                                        <a href="#">Bài 1: Các dạng toán về Phương trình bậc nhất một ấn</a>
+
+                                                        <span class="state-lesson">
+                                                            <span class="txt-state-ls">
+                                                                <img src="img/icon-complete-ls-05.svg" alt="ảnh">
+                                                                <span>Bạn đã hoàn thành bài giảng này</span>
+                                                            </span>
+                                                        </span>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-lesson-3 element-lesson complete-view">
+                                                    <a href="#" class="img-lesson">
+                                                        <img src="img/img-lesson.png" alt="ảnh">
+                                                        <span class="btn-play"><img src="img/icon-play-02.svg" alt="ảnh"></span>
+                                                        <span class="nb-minute"><span>15<sub>'</sub></span></span>
+                                                    </a>
+                                                    <h3 class="name-lesson">
+                                                        <a href="#">Bài 2: Giải các phương trình bậc hai</a>
+                                                        <span class="state-lesson">
+                                                            <span class="txt-state-ls">
+                                                                <img src="img/icon-complete-ls-05.svg" alt="ảnh">
+                                                                <span>Bạn đã hoàn thành bài giảng này</span>
+                                                            </span>
+
+                                                        </span>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-lesson-3 element-lesson uncomplete-view">
+                                                    <a href="#" class="img-lesson">
+                                                        <img src="img/img-lesson.png" alt="ảnh">
+                                                        <span class="btn-play"><img src="img/icon-play-02.svg" alt="ảnh"></span>
+                                                        <span class="nb-minute"><span>15<sub>'</sub></span></span>
+                                                    </a>
+                                                    <h3 class="name-lesson">
+                                                        <a href="#">Bài 3: Căn bậc 2</a>
+
+                                                        <span class="state-lesson">
+                                                            <span class="txt-state-ls">
+                                                                <img src="img/icon-nocomplete-ls-06.svg" alt="ảnh">
+                                                                <span>Bạn đã chưa hoàn thành bài tập của bài giảng này</span>
+                                                            </span>
+
+                                                        </span>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-lesson-3 element-lesson not-seen">
+                                                    <a href="#" class="img-lesson">
+                                                        <img src="img/img-lesson.png" alt="ảnh">
+                                                        <span class="btn-play"><img src="img/icon-play-02.svg" alt="ảnh"></span>
+                                                        <span class="nb-minute"><span>15<sub>'</sub></span></span>
+                                                    </a>
+                                                    <h3 class="name-lesson">
+                                                        <a href="#">Bài 2: Giải các phương trình bậc hai</a>
+                                                        <span class="state-lesson">
+                                                            <span class="txt-state-ls">
+                                                                <img src="img/icon-not-seen-06.svg" alt="ảnh">
+                                                                <span>Bạn chưa học bài giảng này</span>
+                                                            </span>
+                                                        </span>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-lesson-3 element-lesson not-seen">
+                                                    <a href="#" class="img-lesson">
+                                                        <img src="img/img-lesson.png" alt="ảnh">
+                                                        <span class="btn-play"><img src="img/icon-play-02.svg" alt="ảnh"></span>
+                                                        <span class="nb-minute"><span>15<sub>'</sub></span></span>
+                                                    </a>
+                                                    <h3 class="name-lesson">
+                                                        <a href="#">Bài 2: Giải các phương trình bậc hai</a>
+                                                        <span class="state-lesson">
+                                                            <span class="txt-state-ls">
+                                                                <img src="img/icon-not-seen-06.svg" alt="ảnh">
+                                                                <span>Bạn chưa học bài giảng này</span>
+                                                            </span>
+                                                        </span>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-lesson-3 element-lesson not-seen">
+                                                    <a href="#" class="img-lesson">
+                                                        <img src="img/img-lesson.png" alt="ảnh">
+                                                        <span class="btn-play"><img src="img/icon-play-02.svg" alt="ảnh"></span>
+                                                        <span class="nb-minute"><span>15<sub>'</sub></span></span>
+                                                    </a>
+                                                    <h3 class="name-lesson">
+                                                        <a href="#">Bài 2: Giải các phương trình bậc hai</a>
+                                                        <span class="state-lesson">
+                                                            <span class="txt-state-ls">
+                                                                <img src="img/icon-not-seen-06.svg" alt="ảnh">
+                                                                <span>Bạn chưa học bài giảng này</span>
+                                                            </span>
+                                                        </span>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-lesson-3 element-lesson not-seen">
+                                                    <a href="#" class="img-lesson">
+                                                        <img src="img/img-lesson.png" alt="ảnh">
+                                                        <span class="btn-play"><img src="img/icon-play-02.svg" alt="ảnh"></span>
+                                                        <span class="nb-minute"><span>15<sub>'</sub></span></span>
+                                                    </a>
+                                                    <h3 class="name-lesson">
+                                                        <a href="#">Bài 2: Giải các phương trình bậc hai</a>
+                                                        <span class="state-lesson">
+                                                            <span class="txt-state-ls">
+                                                                <img src="img/icon-not-seen-06.svg" alt="ảnh">
+                                                                <span>Bạn chưa học bài giảng này</span>
+                                                            </span>
+                                                        </span>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-lesson-3 element-lesson not-seen">
+                                                    <a href="#" class="img-lesson">
+                                                        <img src="img/img-lesson.png" alt="ảnh">
+                                                        <span class="btn-play"><img src="img/icon-play-02.svg" alt="ảnh"></span>
+                                                        <span class="nb-minute"><span>15<sub>'</sub></span></span>
+                                                    </a>
+                                                    <h3 class="name-lesson">
+                                                        <a href="#">Bài 2: Giải các phương trình bậc hai</a>
+                                                        <span class="state-lesson">
+                                                            <span class="txt-state-ls">
+                                                                <img src="img/icon-not-seen-06.svg" alt="ảnh">
+                                                                <span>Bạn chưa học bài giảng này</span>
+                                                            </span>
+                                                        </span>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="text-right">
+                                                <a href="#" class="view-more" data-ripple>Xem thêm</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block-white class-8">
+                                         <div class="wrap-progress flex-center">
+                                             <div class="class-block">
+                                                 <span class="text-class">Lớp</span>
+                                                 <span class="number-class">8</span>
+                                                 <img src="img/icon-complete-ls-05.svg" alt="ảnh">
+                                             </div>
+                                             <div class="block-progress">
+                                                 <div class="flex-between progress-top">
+                                                     <span>Đã hoàn thành <span>30/30</span> bài</span>
+                                                     <span class="cl-green">Rất tốt! bạn đã hoàn thành toán lớp <span>8</span></span>
+                                                 </div>
+                                                 <div class="progress-tooltip">
+                                                     <progress class="progress" value="100" max="100">100%</progress>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                    </div>
+                                    <div class="block-white class-7">
+                                         <div class="wrap-progress flex-center">
+                                             <div class="class-block">
+                                                 <span class="text-class">Lớp</span>
+                                                 <span class="number-class">7</span>
+                                                 <img src="img/icon-complete-ls-05.svg" alt="ảnh">
+                                             </div>
+                                             <div class="block-progress">
+                                                 <div class="flex-between progress-top">
+                                                     <span>Đã hoàn thành <span>30/30</span> bài</span>
+                                                     <span class="cl-green">Rất tốt! bạn đã hoàn thành toán lớp <span>8</span></span>
+                                                 </div>
+                                                 <div class="progress-tooltip">
+                                                     <progress class="progress" value="100" max="100">100%</progress>
+                                                 </div>
+                                             </div>
+                                         </div>
                                     </div>
 
                                 </div>
-                                <div id="physical" class="container tab-pane fade"><br>
+                                <div id="physical" class="container tab-pane fade">
                                     <h3>Vật lý</h3>
                                     <p>Đây là Vật lý</p>
                                 </div>
-                                <div id="chemistry" class="container tab-pane fade"><br>
+                                <div id="chemistry" class="container tab-pane fade">
                                     <h3>Hóa học</h3>
                                     <p>Đây là Hóa học</p>
                                 </div>
-                                <div id="info-teckno" class="container tab-pane fade"><br>
+                                <div id="info-teckno" class="container tab-pane fade">
                                     <h3>Tin học</h3>
                                     <p>Đây là Tin học</p>
                                 </div>
-                                <div id="english" class="container tab-pane fade"><br>
+                                <div id="english" class="container tab-pane fade">
                                     <h3>Tiếng Anh</h3>
                                     <p>Đây là Tiếng Anh</p>
                                 </div>
+                            </div>
+                        </div>
 
+
+                        <h3 class="title-main">khóa học đã mua</h3>
+
+                        <div class="block-white">
+
+                            <div class="block-lesson">
+                                <!--nếu đã xem hết là class:   complete-view-->
+                                <!--nếu đã chưa hết là class:   uncomplete-view-->
+                                <!--nếu đã xem hết là class:   not-seen-->
+                                <div class="row-lesson-5">
+                                    <div class="col-lesson-3 element-lesson mb-0">
+                                        <a href="#" class="img-lesson">
+                                            <img src="img/img-care.png" alt="ảnh">
+                                        </a>
+                                        <h3 class="name-lesson pl-0">
+                                            <a href="#">Bài 1: Các dạng toán về Phương trình bậc nhất một ấn</a>
+                                            <span class="rate-ob">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                        </h3>
+                                    </div>
+                                    <div class="col-lesson-3 element-lesson mb-0">
+                                        <a href="#" class="img-lesson">
+                                            <img src="img/img-care-2.png" alt="ảnh">
+                                        </a>
+                                        <h3 class="name-lesson pl-0">
+                                            <a href="#">Bài 1: Các dạng toán về Phương trình bậc nhất một ấn</a>
+                                            <span class="rate-ob">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                        </h3>
+                                    </div>
+                                    <div class="col-lesson-3 element-lesson mb-0">
+                                        <a href="#" class="img-lesson">
+                                            <img src="img/img-care-3.png" alt="ảnh">
+                                        </a>
+                                        <h3 class="name-lesson pl-0">
+                                            <a href="#">Bài 1: Các dạng toán về Phương trình bậc nhất một ấn</a>
+                                            <span class="rate-ob">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                        </h3>
+                                    </div>
+                                    <div class="col-lesson-3 element-lesson mb-0">
+                                        <a href="#" class="img-lesson">
+                                            <img src="img/img-care-4.png" alt="ảnh">
+                                        </a>
+                                        <h3 class="name-lesson pl-0">
+                                            <a href="#">Bài 1: Các dạng toán về Phương trình bậc nhất một ấn</a>
+                                            <span class="rate-ob">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </span>
+                                        </h3>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

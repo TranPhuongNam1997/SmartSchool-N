@@ -310,7 +310,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fff;
-  color: #000;
+  color: #606060;
   font-size: 14px;
   line-height: 16px;
   font-family: 'Helvetica Neue'; }
@@ -377,6 +377,9 @@ select {
 
 .pull-right {
   float: right; }
+
+.cl-green {
+  color: #00990E; }
 
 .row-ss {
   margin: 0 -6px;
@@ -560,6 +563,20 @@ select {
   -ms-flex: 0 0 83%;
   flex: 0 0 83%;
   max-width: 83%;
+  position: relative; }
+
+.row-lesson-5 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -5px; }
+
+.col-lesson-3 {
+  padding: 0 5px;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
   position: relative; }
 
 .change-icon-mb .line-1 {
@@ -1093,9 +1110,12 @@ select {
 .field-login input[type="text"]:focus ~ label.lbl-field, .field-login input[type="number"]:focus ~ label.lbl-field, .field-login input[type="password"]:focus ~ label.lbl-field, .field-login input[type="text"]:valid ~ label.lbl-field, .field-login input[type="number"]:valid ~ label.lbl-field, .field-login input[type="password"]:valid ~ label.lbl-field {
   font-size: 12px;
   color: #1476C6;
-  top: -9px;
+  top: 10px;
   transition: all 0.3s cubic-bezier(0.2, 0, 0.03, 1);
   padding: 1px 5px; }
+  @media only screen and (max-width: 576px) {
+    .field-login input[type="text"]:focus ~ label.lbl-field, .field-login input[type="number"]:focus ~ label.lbl-field, .field-login input[type="password"]:focus ~ label.lbl-field, .field-login input[type="text"]:valid ~ label.lbl-field, .field-login input[type="number"]:valid ~ label.lbl-field, .field-login input[type="password"]:valid ~ label.lbl-field {
+      top: 5px; } }
 
 .field-login {
   position: relative;
@@ -1116,10 +1136,11 @@ select {
     border-radius: 4px;
     width: 100%;
     background: #E2EEF7;
-    padding: 10px 18px;
+    padding: 23px 18px 10px;
     outline: none;
     border: none;
-    position: relative; }
+    position: relative;
+    font-weight: 700; }
     .field-login input[type="text"]:focus ~ label.lbl-field, .field-login input[type="number"]:focus ~ label.lbl-field, .field-login input[type="password"]:focus ~ label.lbl-field {
       color: #1476C6; }
     .field-login input[type="text"]:focus ~ span, .field-login input[type="number"]:focus ~ span, .field-login input[type="password"]:focus ~ span {
@@ -1127,7 +1148,8 @@ select {
       width: 100%; }
     @media only screen and (max-width: 576px) {
       .field-login input[type="text"], .field-login input[type="number"], .field-login input[type="password"] {
-        height: 45px; } }
+        height: 45px;
+        padding: 22px 18px 10px; } }
   .field-login label.lbl-field {
     position: absolute;
     top: 19px;
@@ -1179,6 +1201,22 @@ select {
     padding: 0 9px;
     background: #fff;
     color: #1476C6; }
+
+.show-pass {
+  background: none;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 22px;
+  border: none; }
+  .show-pass img {
+    width: 20px;
+    height: 18px; }
+    .show-pass img.img-show-pass {
+      display: block; }
+    .show-pass img.img-hide-pass {
+      display: none; }
 
 .block-cn-lg {
   border: none;
@@ -1280,7 +1318,7 @@ select {
       padding: 20px 15px; } }
 
 .main-gd {
-  padding-bottom: 70px;
+  padding-bottom: 43px;
   background: #F2F5F9; }
 
 .side-bar {
@@ -1314,7 +1352,6 @@ select {
   .block-user .change-pass {
     color: #93D7F9;
     font-size: 12px;
-    font-family: arial;
     text-align: center;
     display: inline-block; }
 
@@ -1353,7 +1390,6 @@ select {
   box-shadow: 1px 3px 11px rgba(21, 21, 21, 0.3215686275);
   color: #fff;
   width: 135px;
-  font-family: Arial;
   background: #218DD6;
   border: none;
   transition: all 0.3s; }
@@ -1411,6 +1447,208 @@ select {
       display: none; }
     .tabs-object .nav-item .nav-link:hover .img-light {
       display: inline-block; }
+
+.block-white {
+  padding: 36px;
+  background: #fff;
+  border-radius: 3px;
+  margin-bottom: 27px; }
+
+.class-9 .class-block {
+  background: url("../img/bg-class-9.png") no-repeat 100% 100%; }
+
+.class-8 .class-block {
+  background: url("../img/bg-class-8.png") no-repeat 100% 100%; }
+
+.class-7 .class-block {
+  background: url("../img/bg-class-7.png") no-repeat 100% 100%; }
+
+.class-block {
+  margin-right: 27px;
+  position: relative;
+  width: 63px;
+  height: 87px;
+  background-size: 100%; }
+  .class-block span {
+    text-align: center;
+    display: block;
+    color: #fff; }
+    .class-block span.text-class {
+      font-weight: 700;
+      margin-bottom: 10px;
+      margin-top: 7px; }
+    .class-block span.number-class {
+      font-weight: 500;
+      font-size: 40px; }
+  .class-block > img {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: -11px;
+    right: -11px; }
+
+.block-progress {
+  width: calc(100% - 100px); }
+  .block-progress .progress-top {
+    margin-bottom: 18px; }
+    .block-progress .progress-top span {
+      font-weight: 500; }
+
+.wrap-progress {
+  margin-bottom: 20px; }
+
+.img-lesson {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.14); }
+  .img-lesson:before {
+    content: '';
+    display: block;
+    padding-bottom: 53%; }
+  .img-lesson > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+  .img-lesson:after {
+    content: '';
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #FFDA00;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s; }
+  .img-lesson .btn-play {
+    position: absolute;
+    top: 46%;
+    left: 9px; }
+    .img-lesson .btn-play img {
+      width: 27px;
+      height: 27px; }
+  .img-lesson .nb-minute {
+    width: 108px;
+    height: 108px;
+    background: #fff;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 50%); }
+    .img-lesson .nb-minute > span {
+      color: #1476C6;
+      position: absolute;
+      top: 30%;
+      left: 30%;
+      transform: translate(-50%, -50%); }
+
+.name-lesson {
+  padding-left: 18px;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+  margin-bottom: 0; }
+  .name-lesson > a {
+    padding-top: 17px;
+    display: block;
+    transition: all 0.3s;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box; }
+  .name-lesson .state-lesson {
+    width: 9px;
+    height: 9px;
+    background: #a0a0a0;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 4px; }
+    .name-lesson .state-lesson .txt-state-ls {
+      position: absolute;
+      bottom: 19px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 6px;
+      background: #fff;
+      padding: 6px 8px 6px 28px;
+      box-shadow: 1px 8px 11px rgba(99, 99, 99, 0.4784313725);
+      display: none; }
+      .name-lesson .state-lesson .txt-state-ls:after {
+        content: '';
+        border-left: 4px solid transparent;
+        border-top: 4px solid #fff;
+        border-right: 4px solid transparent;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%; }
+      .name-lesson .state-lesson .txt-state-ls img {
+        width: 13px;
+        height: 13px;
+        margin-right: 3px;
+        position: absolute;
+        left: 8px;
+        top: 8px; }
+      .name-lesson .state-lesson .txt-state-ls span {
+        vertical-align: middle;
+        white-space: nowrap; }
+    .name-lesson .state-lesson:hover .txt-state-ls {
+      display: block; }
+
+.complete-view .state-lesson {
+  background: #00990E; }
+.complete-view .name-lesson > a {
+  color: #1476C6; }
+
+.uncomplete-view .state-lesson {
+  background: #990000; }
+.uncomplete-view .name-lesson > a {
+  color: #1476C6; }
+
+.element-lesson {
+  margin-bottom: 18px; }
+  .element-lesson:hover .img-lesson {
+    transform: translateY(-10px);
+    transition: all 0.3s;
+    box-shadow: 1px 5px 18px rgba(0, 0, 0, 0.2392156863); }
+    .element-lesson:hover .img-lesson:after {
+      opacity: 1;
+      transition: all 0.3s; }
+  .element-lesson:hover .name-lesson > a {
+    color: #1476C6;
+    transition: all 0.3s; }
+
+.view-more {
+  height: 36px;
+  line-height: 36px;
+  border-radius: 30px;
+  color: #fff;
+  background: #A680D7;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0 35px;
+  transition: all 0.3s; }
+  .view-more:hover {
+    color: #fff;
+    transition: all 0.3s;
+    box-shadow: 1px 5px 18px rgba(0, 0, 0, 0.2392156863); }
+
+.class-9 .view-more {
+  background: #A680D7; }
+
+.rate-ob {
+  margin-top: 9px;
+  display: block; }
+  .rate-ob i {
+    color: #F99F00; }
 
 #back-to-top {
   position: fixed;

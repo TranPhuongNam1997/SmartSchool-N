@@ -10,7 +10,7 @@ body{
   margin: 0;
   padding: 0;
   background: #fff;
-  color: #000;
+  color: #606060;
   font-size: 14px;
   line-height: 16px;
   font-family: 'Helvetica Neue';
@@ -85,4 +85,8 @@ select{
 }
 .pull-right{
   float: right;
+}
+
+.cl-green{
+  color: #00990E;
 }
