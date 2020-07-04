@@ -126,12 +126,12 @@
                     <h3 class="title-login">ĐĂNG NHẬP</h3>
                     <form action="#" class="form-login">
                         <div class="field-login">
-                            <input type="text" >
+                            <input type="text" required>
                             <label class="lbl-field">Tài khoản</label>
                             <span></span>
                         </div>
                         <div class="field-login">
-                            <input type="password"  class="password-ss">
+                            <input type="password" required class="password-ss">
                             <label class="lbl-field">Mật khẩu</label>
                             <span></span>
                             <button type="button" class="show-pass">
@@ -182,35 +182,9 @@
 
 
 </div>
-
-<div class="md-modal md-effect-2 modal-small" id="modal-2">
-    <div class="md-content">
-        <button class="md-close btn-close"><i class="fas fa-times"></i></button>
-        <div class="head-modal">
-            <h3>quên mật khẩu</h3>
-        </div>
-        <div class="main-modal">
-            <div class="row">
-                <div class="col-sm-4 col-12">
-                    <div class="flex-center justify-content-center h-100">
-                        <img src="img/bg-forgot.png" alt="ảnh">
-                    </div>
-
-                </div>
-                <div class="col-sm-8 col-12">
-                    <div class="txt-forgot">Nhập Email hoặc Sđt đã đăng ký</div>
-                    <div class="field-login">
-                        <input type="text" class="ip-forgot" placeholder="Nhập Email hoặc số điện thoại đã đăng ký">
-                    </div>
-                    <button type="submit" class="btn-blue" data-ripple>Lấy mật khẩu</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <div class="md-modal md-effect-2 modal-small md-otp" id="modal-1">
     <div class="md-content">
+        <button class="md-close btn-close d-none"><i class="fas fa-times"></i></button>
         <div class="head-modal text-center">
             <h3>Xác thực đăng nhập</h3>
         </div>
@@ -238,8 +212,36 @@
     </div>
 </div>
 
+<div class="md-modal md-effect-2 modal-small" id="modal-2">
+    <div class="md-content">
+        <button class="md-close btn-close"><i class="fas fa-times"></i></button>
+        <div class="head-modal">
+            <h3>quên mật khẩu</h3>
+        </div>
+        <div class="main-modal">
+            <div class="row">
+                <div class="col-sm-4 col-12">
+                    <div class="flex-center justify-content-center h-100">
+                        <img src="img/bg-forgot.png" alt="ảnh">
+                    </div>
+
+                </div>
+                <div class="col-sm-8 col-12">
+                    <div class="txt-forgot">Nhập Email hoặc Sđt đã đăng ký</div>
+                    <div class="field-login">
+                        <input type="text" class="ip-forgot" placeholder="Nhập Email hoặc số điện thoại đã đăng ký">
+                    </div>
+                    <button type="submit" class="btn-blue" data-ripple>Lấy mật khẩu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 
 <div class="md-overlay google"></div>
+
 </body>
 </html>
