@@ -741,6 +741,29 @@
   max-width: 550px;
 }
 
+.modal {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.modal .modal-dialog{
+  margin: 0;
+  max-width: initial;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.modal.show .modal-dialog{
+  transform: translateY(-50%);
+}
+//.modal.fade .modal-dialog{
+//  left: 75%;
+//}
+//.modal.show .modal-dialog{
+//  transform: translate(-50%,0);
+//}
+//.modal.fade .modal-dialog{
+//  transform: translateY(-50%) translate(0,-50px);
+//}
+
 //style registation------------------------------------------------
 
 .bg-registation{

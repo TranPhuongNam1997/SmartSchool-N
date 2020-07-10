@@ -163,3 +163,101 @@ a.btn-scrolltop {
   border-radius: 9px;
   display: none;
 }
+
+
+//style thong tin ca nhan
+
+.title-student{
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.name-student{
+  font-weight: 700;
+  font-size: 22px;
+  color: $c-bl;
+  text-transform: uppercase;
+  margin-bottom: 44px;
+}
+.list-info{
+  margin-bottom: 44px;
+  li{
+    margin-bottom: 23px;
+    label{
+      display: block;
+      margin-bottom: 15px;
+      font-size: 12px;
+      color: $c-bl;
+      font-weight: 500;
+    }
+    span{
+      font-weight: 500;
+    }
+  }
+}
+
+.name-user-hv{
+  position: relative;
+  >img{
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    vertical-align: initial;
+  }
+  >span{
+    font-weight: 500;
+    color: $c-bl;
+
+
+  }
+  >i{
+     margin-left: 15px;
+    color: $c-bl;
+   }
+  .name-main-user{
+    cursor: pointer;
+  }
+  &:hover.name-main-user{
+
+      text-decoration: underline;
+
+  }
+  .block-ultility{
+    display: none;
+    padding-top: 18px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    .element-ultility{
+
+      display: block;
+      background: #fff;
+      border-radius: 3px;
+      padding: 27px;
+      width: 234px;
+      box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.24);
+      a{
+        display: block;
+        font-weight: 400;
+        color: #000000;
+        padding: 8px 0 12px;
+        &:hover{
+          color: $c-bl;
+        }
+      }
+      .info-private{
+        border-bottom: 1px solid #ADADAD;
+      }
+      .link-changepass{
+        padding: 15px 0 24px;
+      }
+      .btn-blue{
+        height: 35px;
+        font-weight: 400;
+      }
+    }
+  }
+  &:hover .block-ultility{
+    display: block;
+  }
+}

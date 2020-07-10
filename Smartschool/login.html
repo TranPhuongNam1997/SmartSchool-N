@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -139,13 +139,13 @@
                                 <img class="img-hide-pass" src="img/hide-pass-02.svg" alt="ảnh">
                             </button>
                         </div>
-                        <button type="submit" class="btn-blue md-trigger" data-ripple data-modal="modal-1">Đăng nhập</button>
+                        <button type="submit" class="btn-blue" data-ripple  data-toggle="modal" data-target="#myModal1" data-backdrop="static" data-keyboard="false">Đăng nhập</button>
                         <div class="flex-between">
                             <div class="remember-pass">
                                 <input type="checkbox">
                                 <label for="#">Nhở mật khẩu</label>
                             </div>
-                            <a href="javascript:0;" class="forgot-pass md-trigger" data-modal="modal-2">Quên mật khẩu</a>
+                            <a href="javascript:0;" class="forgot-pass" data-toggle="modal" data-target="#myModal2" data-backdrop="static" data-keyboard="false">Quên mật khẩu</a>
                         </div>
                         <div class="or">
                             <div>Hoặc</div>
@@ -182,66 +182,70 @@
 
 
 </div>
-<div class="md-modal md-effect-2 modal-small md-otp" id="modal-1">
-    <div class="md-content">
-        <button class="md-close btn-close d-none"><i class="fas fa-times"></i></button>
-        <div class="head-modal text-center">
-            <h3>Xác thực đăng nhập</h3>
-        </div>
-        <div class="main-modal">
-            <div class="row">
-                <div class="col-12">
-                    <form action="" class="form-otp">
-                        <div class="txt-otp">Hệ thống sẽ gửi SMS có mã OTP để xác thực đăng nhập.</div>
-                        <div class="text-center">
-                            <input type="text" class="field-otp">
-                        </div>
-                        <div class="sugges-regis text-center mt-3">
-                            <span>Bạn chưa nhận được mã OTP</span>
-                            <a href="#">Gửi lại mã OTP</a>
-                        </div>
-                        <div class="text-center mt-4">
-                            <button type="submit" class="btn-blue" data-ripple>Xác nhận</button>
-                        </div>
-                    </form>
-
-                </div>
-
+<div class=" modal fade modal-small md-otp" id="myModal1">
+    <div class="modal-dialog">
+        <div class="md-content modal-content">
+            <div class="head-modal text-center">
+                <h3>Xác thực đăng nhập</h3>
             </div>
-        </div>
-    </div>
-</div>
+            <div class="main-modal">
+                <div class="row">
+                    <div class="col-12">
+                        <form action="" class="form-otp">
+                            <div class="txt-otp">Hệ thống sẽ gửi SMS có mã OTP để xác thực đăng nhập.</div>
+                            <div class="text-center">
+                                <input type="text" class="field-otp">
+                            </div>
+                            <div class="sugges-regis text-center mt-3">
+                                <span>Bạn chưa nhận được mã OTP</span>
+                                <a href="#">Gửi lại mã OTP</a>
+                            </div>
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn-blue" data-ripple>Xác nhận</button>
+                            </div>
+                        </form>
 
-<div class="md-modal md-effect-2 modal-small" id="modal-2">
-    <div class="md-content">
-        <button class="md-close btn-close"><i class="fas fa-times"></i></button>
-        <div class="head-modal">
-            <h3>quên mật khẩu</h3>
-        </div>
-        <div class="main-modal">
-            <div class="row">
-                <div class="col-sm-4 col-12">
-                    <div class="flex-center justify-content-center h-100">
-                        <img src="img/bg-forgot.png" alt="ảnh">
                     </div>
 
-                </div>
-                <div class="col-sm-8 col-12">
-                    <div class="txt-forgot">Nhập Email hoặc Sđt đã đăng ký</div>
-                    <div class="field-login">
-                        <input type="text" class="ip-forgot" placeholder="Nhập Email hoặc số điện thoại đã đăng ký">
-                    </div>
-                    <button type="submit" class="btn-blue" data-ripple>Lấy mật khẩu</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<div class="modal fade modal-small" id="myModal2">
+    <div class="modal-dialog">
+        <div class="md-content modal-content">
+            <button class="md-close btn-close" data-dismiss="modal"><i class="fas fa-times"></i></button>
+            <div class="head-modal">
+                <h3>quên mật khẩu</h3>
+            </div>
+            <div class="main-modal">
+                <div class="row">
+                    <div class="col-sm-4 col-12">
+                        <div class="flex-center justify-content-center h-100">
+                            <img src="img/bg-forgot.png" alt="ảnh">
+                        </div>
+
+                    </div>
+                    <div class="col-sm-8 col-12">
+                        <div class="txt-forgot">Nhập Email hoặc Sđt đã đăng ký</div>
+                        <div class="field-login">
+                            <input type="text" class="ip-forgot" placeholder="Nhập Email hoặc số điện thoại đã đăng ký">
+                        </div>
+                        <button type="submit" class="btn-blue" data-ripple>Lấy mật khẩu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 
 
-<div class="md-overlay google"></div>
+
+<!--<div class="md-overlay google"></div>-->
 
 </body>
 </html>

@@ -381,6 +381,9 @@ select {
 .cl-green {
   color: #00990E; }
 
+.container-main.pd-99 {
+  padding-top: 99px; }
+
 .row-ss {
   margin: 0 -6px;
   display: -ms-flexbox;
@@ -1316,6 +1319,19 @@ select {
 .modal-small.md-otp {
   max-width: 550px; }
 
+.modal {
+  left: 50%;
+  transform: translateX(-50%); }
+
+.modal .modal-dialog {
+  margin: 0;
+  max-width: initial;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.modal.show .modal-dialog {
+  transform: translateY(-50%); }
+
 .bg-registation {
   padding-top: 157px;
   background: url("../img/banner-regis.png") no-repeat center top; }
@@ -1811,6 +1827,78 @@ a.btn-scrolltop {
   border-radius: 9px;
   display: none; }
 
+.title-student {
+  font-weight: 500;
+  margin-bottom: 10px; }
+
+.name-student {
+  font-weight: 700;
+  font-size: 22px;
+  color: #1476C6;
+  text-transform: uppercase;
+  margin-bottom: 44px; }
+
+.list-info {
+  margin-bottom: 44px; }
+  .list-info li {
+    margin-bottom: 23px; }
+    .list-info li label {
+      display: block;
+      margin-bottom: 15px;
+      font-size: 12px;
+      color: #1476C6;
+      font-weight: 500; }
+    .list-info li span {
+      font-weight: 500; }
+
+.name-user-hv {
+  position: relative; }
+  .name-user-hv > img {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    vertical-align: initial; }
+  .name-user-hv > span {
+    font-weight: 500;
+    color: #1476C6; }
+  .name-user-hv > i {
+    margin-left: 15px;
+    color: #1476C6; }
+  .name-user-hv .name-main-user {
+    cursor: pointer; }
+  .name-user-hv:hover.name-main-user {
+    text-decoration: underline; }
+  .name-user-hv .block-ultility {
+    display: none;
+    padding-top: 18px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%); }
+    .name-user-hv .block-ultility .element-ultility {
+      display: block;
+      background: #fff;
+      border-radius: 3px;
+      padding: 27px;
+      width: 234px;
+      box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.24); }
+      .name-user-hv .block-ultility .element-ultility a {
+        display: block;
+        font-weight: 400;
+        color: #000000;
+        padding: 8px 0 12px; }
+        .name-user-hv .block-ultility .element-ultility a:hover {
+          color: #1476C6; }
+      .name-user-hv .block-ultility .element-ultility .info-private {
+        border-bottom: 1px solid #ADADAD; }
+      .name-user-hv .block-ultility .element-ultility .link-changepass {
+        padding: 15px 0 24px; }
+      .name-user-hv .block-ultility .element-ultility .btn-blue {
+        height: 35px;
+        font-weight: 400; }
+  .name-user-hv:hover .block-ultility {
+    display: block; }
+
 input[type="checkbox"][disabled="disabled"] {
   background: transparent; }
 
@@ -1909,6 +1997,16 @@ input[type="radio"]:checked ~ label {
 
 button[data-ripple] {
   position: relative; }
+
+.btn-blue-dark {
+  padding: 8px 17px;
+  border-radius: 3px;
+  text-align: center;
+  box-shadow: 1px 3px 11px rgba(21, 21, 21, 0.3215686275);
+  color: #fff;
+  background: #218DD6;
+  border: none;
+  transition: all 0.3s; }
 
 .slick-slide img {
   width: 100%; }

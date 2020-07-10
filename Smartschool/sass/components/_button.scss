@@ -104,3 +104,13 @@ input[type="radio"]:checked ~ label{
 button[data-ripple]{
   position: relative;
 }
+.btn-blue-dark{
+  padding: 8px 17px;
+  border-radius: 3px;
+  text-align: center;
+  box-shadow: 1px 3px 11px rgba(21, 21, 21, 0.3215686275);
+  color: #fff;
+  background: #218DD6;
+  border: none;
+  transition: all 0.3s;
+}
