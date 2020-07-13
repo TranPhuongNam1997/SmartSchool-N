@@ -136,30 +136,7 @@
   visibility: visible;
 }
 
-/* Content styles */
-.md-content {
-  color: #fff;
-  background: #fff;
-  position: relative;
-  border-radius: 3px;
-  margin: 0 auto;
-  padding: 29px;
-  filter: blur(0);
-  h3 {
-    font-size: 22px;
-    font-weight: 700;
-    color: $c-bl;
-    text-transform: uppercase;
-    margin-bottom: 17px;
-    @include mobile{
-      font-size: 18px;
-    }
-  }
-  @include mobile{
-    padding: 15px;
-  }
 
-}
 
 /* Individual modal styles with animations/transitions */
 

@@ -23,10 +23,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libs/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/base/_animation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_animation.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_button.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/layout/_content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_content.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layout/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_grid.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css.map" afterDir="false" />
     </list>
@@ -109,6 +110,7 @@
       <workItem from="1593835632408" duration="2758000" />
       <workItem from="1594024355390" duration="4451000" />
       <workItem from="1594102706391" duration="7718000" />
+      <workItem from="1594621665665" duration="17380000" />
     </task>
     <servers />
   </component>

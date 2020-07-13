@@ -145,7 +145,7 @@
                                 <input type="checkbox">
                                 <label for="#">Nhở mật khẩu</label>
                             </div>
-                            <a href="javascript:0;" class="forgot-pass" data-toggle="modal" data-target="#myModal2" data-backdrop="static" data-keyboard="false">Quên mật khẩu</a>
+                            <a href="javascript:0;" class="forgot-pass" data-toggle="modal" data-target="#myModal2" data-backdrop="static" data-keyboard="false" onclick="countdown()">Quên mật khẩu</a>
                         </div>
                         <div class="or">
                             <div>Hoặc</div>
@@ -182,58 +182,69 @@
 
 
 </div>
-<div class=" modal fade modal-small md-otp" id="myModal1">
+<div class=" modal fade modal-small md-otp" id="myModal2">
     <div class="modal-dialog">
         <div class="md-content modal-content">
-            <div class="head-modal text-center">
-                <h3>Xác thực đăng nhập</h3>
+            <div class="head-modal flex-between">
+                <h3>Quên mật khẩu</h3>
+                <button class="btn-close" data-dismiss="modal"><i class="fas fa-times"></i></button>
             </div>
             <div class="main-modal">
                 <div class="row">
                     <div class="col-12">
                         <form action="" class="form-otp">
-                            <div class="txt-otp">Hệ thống sẽ gửi SMS có mã OTP để xác thực đăng nhập.</div>
-                            <div class="text-center">
-                                <input type="text" class="field-otp">
+                            <div class="group-otp">
+                                <div class="lbl-otp">Nhập Email hoặc số điện thoại</div>
+                                <div class="itemip-otp">
+                                    <input type="text" placeholder="Nhập Email hoặc Số điện thoại">
+                                    <button class="send-otp active" data-ripple>Gửi mã OTP <span>(<span id="down-second"></span>)</span></button>
+                                </div>
                             </div>
-                            <div class="sugges-regis text-center mt-3">
-                                <span>Bạn chưa nhận được mã OTP</span>
-                                <a href="#">Gửi lại mã OTP</a>
+                            <div class="resend-otp">Hệ thống đã gửi mã OTP tới số điện thoại của bạn!</div>
+                            <div class="group-otp">
+                                <div class="lbl-otp">Nhập Email hoặc số điện thoại</div>
+                                <div class="itemip-otp">
+                                    <input type="text" placeholder="Nhập Email hoặc Số điện thoại">
+                                </div>
                             </div>
-                            <div class="text-center mt-4">
-                                <button type="submit" class="btn-blue" data-ripple>Xác nhận</button>
-                            </div>
+                            <button class="btn-blue w-100" data-ripple>Khôi phục mật khẩu</button>
+
                         </form>
-
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="modal fade modal-small" id="myModal2">
+<div class="modal fade modal-small md-otp" id="myModal1">
     <div class="modal-dialog">
         <div class="md-content modal-content">
-            <button class="md-close btn-close" data-dismiss="modal"><i class="fas fa-times"></i></button>
-            <div class="head-modal">
-                <h3>quên mật khẩu</h3>
+            <div class="head-modal flex-between">
+                <h3>XÁC THỰC ĐĂNG NHẬP</h3>
+                <button class="btn-close" data-dismiss="modal"><i class="fas fa-times"></i></button>
             </div>
             <div class="main-modal">
                 <div class="row">
-                    <div class="col-sm-4 col-12">
-                        <div class="flex-center justify-content-center h-100">
-                            <img src="img/bg-forgot.png" alt="ảnh">
-                        </div>
+                    <div class="col-12">
+                        <form action="" class="form-otp">
+                            <div class="group-otp">
+                                <div class="lbl-otp">Hệ thống sẽ gửi SMS có mã OTP để xác thực đăng nhập</div>
+                                <div class="itemip-otp">
+                                    <input type="text" placeholder="Nhập mã OTP">
+                                </div>
+                            </div>
+                            <div class="foot-confirmlogin flex-between">
+                                <div class="cf-otp-left">
+                                    <div>Bạn chưa nhận được mã OTP</div>
+                                    <a href="#">Gửi lại mã OTP</a>
+                                    <div>Gửi lại OTP (2s)</div>
+                                </div>
+                                <button class="btn-blue mb-0" data-ripple>Xác thực</button>
+                            </div>
 
-                    </div>
-                    <div class="col-sm-8 col-12">
-                        <div class="txt-forgot">Nhập Email hoặc Sđt đã đăng ký</div>
-                        <div class="field-login">
-                            <input type="text" class="ip-forgot" placeholder="Nhập Email hoặc số điện thoại đã đăng ký">
-                        </div>
-                        <button type="submit" class="btn-blue" data-ripple>Lấy mật khẩu</button>
+
+                        </form>
                     </div>
                 </div>
             </div>
@@ -243,9 +254,38 @@
 </div>
 
 
+<script>
+    function countdown() {
+        var t = new Date();
+        t.setSeconds(t.getSeconds() + 60);
+        console.log(t);
 
+        // Update the count down every 1 second
+        var x = setInterval(function() {
 
-<!--<div class="md-overlay google"></div>-->
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = t - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("down-second").innerHTML = seconds + "s";
+
+            // If the count down is over, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("down-second").innerHTML = "Gửi lại";
+            }
+        }, 1000);
+    }
+</script>
 
 </body>
 </html>

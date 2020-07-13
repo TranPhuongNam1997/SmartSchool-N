@@ -251,6 +251,10 @@ $(document).ready(function () {
     //
     // })();
 
+
+
+
+
     // Click event of the showPassword button
     $('.show-pass').on('click', function(){
 
