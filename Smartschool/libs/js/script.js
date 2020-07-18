@@ -112,25 +112,29 @@ $(document).ready(function () {
    $('.wrap-search i').click(function () {
        $('.block-seacrh').toggle();
    });
-    $(window).scroll(function () {
-        if ($(window).scrollTop() >= 300) {
-            $('.header-gd').addClass('fixed');
-            $('.container-main').addClass('pd-99');
+    // $(window).scroll(function () {
+    //     if ($(window).scrollTop() >= 300) {
+    //         $('.header-gd').addClass('fixed');
+    //         $('.container-main').addClass('pd-99');
+    //
+    //     } else {
+    //         $('.header-gd').removeClass('fixed');
+    //         $('.container-main').removeClass('pd-99');
+    //     }
+    // });
 
-        } else {
-            $('.header-gd').removeClass('fixed');
-            $('.container-main').removeClass('pd-99');
-        }
+    $(window).scroll( () => {
+        var windowTop = $(window).scrollTop();
+        windowTop > 100 ? $('.head-wrap').addClass('navShadow') : $('.head-wrap').removeClass('navShadow');
+        // windowTop > 100 ? $('ul').css('top','100px') : $('ul').css('top','160px');
     });
 
-    $(document).ready(function() {
-        $("a[href='#top']").click(function () {
-            $("html, body").animate({scrollTop: 0}, "slow");
-            return false;
-        });
-    });
 
     // go top
+    $("a[href='#top']").click(function () {
+        $("html, body").animate({scrollTop: 0}, "slow");
+        return false;
+    });
     $(window).scroll(function () {
         if ($(window).scrollTop() >= 300) {
             $('#go_top').show();
@@ -139,6 +143,15 @@ $(document).ready(function () {
             $('#go_top').hide();
         }
     });
+
+    //js menu by javascript
+    $('body').append("<div class='overlay'></div>");
+    $('.btn-bars').click(function () {
+        $('.overlay').toggle();
+        $('.navigation').toggleClass('show');
+    });
+
+
 
     //modal
     // ( function( window ) {
@@ -252,8 +265,15 @@ $(document).ready(function () {
     // })();
 
 
-
-
+    // hover tab
+    (function ($) {
+        $(function () {
+            $(document).off('click.bs.tab.data-api', '[data-hover="tab"]');
+            $(document).on('mouseenter.bs.tab.data-api', '[data-toggle="tab"], [data-hover="tab"]', function () {
+                $(this).tab('show');
+            });
+        });
+    })(jQuery);
 
     // Click event of the showPassword button
     $('.show-pass').on('click', function(){

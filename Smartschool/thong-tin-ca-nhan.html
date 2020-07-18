@@ -25,54 +25,117 @@
 <body>
 <div id="wraper">
     <header class="header-gd">
-        <div class="container">
-            <div class="head-wrap flex-between">
-                <div class="block-connect">
-                    <a href=""><i class="fab fa-google-plus-g"></i></a>
-                    <a href=""><i class="fas fa-wifi"></i></a>
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-vimeo-v"></i></a>
-                </div>
-                <div class="logo">
-                    <h1>
-                        <a href="#"><img src="img/logo-18.svg" alt="ảnh"></a>
-                    </h1>
-                </div>
-                <div class="head-right">
-                    <ul>
-                        <li>
-                            <div class="wrap-search">
-                                <i class="fas fa-search"></i>
-                                <span class="block-seacrh">
+        <div class=" bg-white">
+            <div class="container">
+                <div class="head-wrap position-relative">
+                    <button class="btn-bars">
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </button>
+                    <div class="block-logo">
+                        <div class="logo">
+                            <h1>
+                                <a href="#"><img src="img/logo-07.svg" alt="ảnh"></a>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="block-connect">
+                        <a href=""><i class="fab fa-google-plus-g"></i></a>
+                        <a href=""><i class="fas fa-wifi"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-vimeo-v"></i></a>
+                    </div>
+
+
+                    <div class="head-right">
+                        <ul>
+                            <li>
+                                <div class="wrap-search">
+                                    <i class="fas fa-search"></i>
+                                    <span class="block-seacrh">
                                     <input type="text">
                                     <button class="btn-search"><i class="fas fa-search"></i></button>
                                 </span>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="name-user-hv">
-                                <img src="img/icon-user-03.svg" alt="ảnh"><span class="name-main-user">Tống Minh Hà</span><i class="fas fa-caret-down"></i>
-                                <span class="block-ultility">
-                                    <span class="element-ultility">
-                                        <a href="#" class="info-private">Thông tin cá nhân</a>
-                                        <a href="#" class="link-changepass">Đổi mật khẩu</a>
-                                        <button class="btn-blue mb-0" data-ripple>Đăng xuất</button>
-                                    </span>
-                                </span>
-
-                            </span>
-                        </li>
-                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">Đăng ký</a>
+                            </li>
+                            <li>
+                                <label for="#">|</label>
+                                <a href="#">Đăng nhập</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+
         <nav class="navigation">
             <div class="container clearfix">
                 <div class="pull-left">
                     <ul class="menu clearfix">
                         <li><a href="#">Trang chủ</a></li>
-                        <li><a href="#">Khóa học</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Khóa học <i class="fa fa-caret-down"></i></a>
+                            <div class="menu-child">
+                                <div class="container">
+                                    <ul class="list-1">
+                                        <li><a href="#">Luyện thi ĐH - CĐ</a></li>
+                                        <li><a href="#">Luyện thi vào lớp 10</a></li>
+                                        <li><a href="#">Luyện thi vào lớp 6</a></li>
+                                    </ul>
+                                    <div class="block-list2">
+                                        <ul class="list-2 clearfix nav nav-pills">
+                                            <li><a class="active" href="#tab-1" data-toggle="tab">Lớp 12</a></li>
+                                            <li><a href="#tab-2" data-toggle="tab">Lớp 11</a></li>
+                                            <li><a href="#tab-3" data-toggle="tab">Lớp 10</a></li>
+                                            <li><a href="#tab-4" data-toggle="tab">Lớp 9</a></li>
+                                            <li><a href="#tab-5" data-toggle="tab">Lớp 8</a></li>
+                                            <li><a href="#tab-6" data-toggle="tab">Lớp 7</a></li>
+                                            <li><a href="#tab-7" data-toggle="tab">Lớp 6</a></li>
+                                            <li><a href="#tab-8" data-toggle="tab">Lớp 5</a></li>
+                                            <li><a href="#tab-9" data-toggle="tab">Lớp 4</a></li>
+                                            <li><a href="#tab-10" data-toggle="tab">Lớp 3</a></li>
+                                            <li><a href="#tab-11" data-toggle="tab">Lớp 2</a></li>
+                                            <li><a href="#tab-12" data-toggle="tab">Lớp 1</a></li>
+                                        </ul>
+                                        <!-- Tab panes -->
+                                        <div class="tab-menu tab-content well">
+                                            <div class="tab-pane active" id="tab-1">
+                                                <ul class="list-3">
+                                                    <li><a href="#">Toán</a></li>
+                                                    <li><a href="#">Lý</a></li>
+                                                    <li><a href="#">Hóa</a></li>
+                                                    <li><a href="#">Văn</a></li>
+                                                    <li><a href="#">Lịch sử</a></li>
+                                                    <li><a href="#">Địa lý</a></li>
+                                                    <li><a href="#">Sinh</a></li>
+                                                    <li><a href="#">Tiếng anh</a></li>
+                                                    <li><a href="#">Tin học</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-pane" id="tab-2">Content 2</div>
+                                            <div class="tab-pane" id="tab-3">Content 3</div>
+                                            <div class="tab-pane" id="tab-4">Content 4</div>
+                                            <div class="tab-pane" id="tab-5">Content 5</div>
+                                            <div class="tab-pane" id="tab-6">Content 6</div>
+                                            <div class="tab-pane" id="tab-7">Content 7</div>
+                                            <div class="tab-pane" id="tab-8">Content 8</div>
+                                            <div class="tab-pane" id="tab-9">Content 9</div>
+                                            <div class="tab-pane" id="tab-10">Content 10</div>
+                                            <div class="tab-pane" id="tab-11">Content 11</div>
+                                            <div class="tab-pane" id="tab-12">Content 12</div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </li>
                         <li><a href="#">Đề thi</a></li>
                         <li><a href="#">Tài liệu</a></li>
                         <li><a href="#">Học phí</a></li>

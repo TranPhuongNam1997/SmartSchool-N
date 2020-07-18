@@ -37,21 +37,39 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0 -27px;
+  //margin: 0 -27px;
+  margin: 0 -15px;
 }
 .col-gd-73{
-  padding: 0 27px;
+  //padding: 0 27px;
+  padding: 0 15px;
   -ms-flex: 0 0 73%;
   flex: 0 0 73%;
   max-width: 73%;
   position: relative;
+  @include tablet{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
 }
 .col-gd-27{
-  padding: 0 27px;
+  //padding: 0 27px;
+  padding: 0 15px;
   -ms-flex: 0 0 27%;
   flex: 0 0 27%;
   max-width: 27%;
   position: relative;
+  @include tablet{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  @include mobile-horizontal{
+    margin-top: 20px;
+  }
 }
 
 .row-gd-44{
@@ -60,6 +78,9 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 -22px;
+  @include tablet{
+    margin: 0 -15px;
+  }
 }
 .col-gd-35{
   padding: 0 22px;
@@ -67,6 +88,14 @@
   flex: 0 0 35%;
   max-width: 35%;
   position: relative;
+  @include tablet{
+    padding: 0 15px;
+  }
+  @include mobile{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 .col-gd-65{
   padding: 0 22px;
@@ -74,6 +103,15 @@
   flex: 0 0 65%;
   max-width: 65%;
   position: relative;
+  @include tablet{
+    padding: 0 15px;
+  }
+  @include mobile{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 15px;
+  }
 }
 
 .container-login{

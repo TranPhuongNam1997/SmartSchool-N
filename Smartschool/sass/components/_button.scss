@@ -121,6 +121,9 @@ button[data-ripple]{
   margin-bottom: 17px;
   label{
     vertical-align: baseline;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   > label {
@@ -128,6 +131,10 @@ button[data-ripple]{
     text-transform: uppercase;
     margin-left: 5px;
     color: $c-bl;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
   }
 
   input {
@@ -140,9 +147,9 @@ button[data-ripple]{
 
     > li {
       padding: 13px 25px;
-      background: url("../img/bg-pg.png") repeat-y, url("../img/bg-pg-2.png") top 10px left no-repeat;
+      background: url("../img/bg-gr-02.png") top left 10px repeat-y, url("../img/bg-gr-01.png") top 21px left 10px no-repeat;
       &:last-child{
-        background: url("../img/bg-pg-3.png") no-repeat top left;
+        background: url("../img/bg-gr-03.png") no-repeat top left 10px;
       }
       &:before{
         content: '';
@@ -153,18 +160,23 @@ button[data-ripple]{
         color: #3d3d3d;
         font-weight: 700;
         margin-left: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
       }
 
       > ul {
         > li {
           padding: 13px 25px 0;
-          background: url("../img/bg-pg.png") repeat-y, url("../img/bg-pg-2.png") top 10px left no-repeat;
+          background: url("../img/bg-gr-02.png") top left 10px repeat-y, url("../img/bg-gr-01.png") top 21px left 10px no-repeat;
           &:last-child{
-            background: url("../img/bg-pg-3.png") no-repeat top left;
+            background: url("../img/bg-gr-03.png") no-repeat top left 10px;
           }
           > label {
             margin-left: 5px;
             color: #828282;
+            display: block;
           }
 
           > ul {
@@ -172,13 +184,14 @@ button[data-ripple]{
 
             li {
               padding: 13px 25px 0;
-              background: url("../img/bg-pg.png") repeat-y, url("../img/bg-pg-2.png") top 10px left no-repeat;
+              background: url("../img/bg-gr-02.png") top left 10px repeat-y, url("../img/bg-gr-01.png") top 21px left 10px no-repeat;
               &:last-child{
-                background: url("../img/bg-pg-3.png") no-repeat top left;
+                background: url("../img/bg-gr-03.png") no-repeat top left 10px;
               }
               label {
                 margin-left: 5px;
                 margin-bottom: 13px;
+                display: block;
               }
 
               > ul {

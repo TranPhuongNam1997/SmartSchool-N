@@ -23,12 +23,16 @@
   }
 }
 .header-gd{
-  background: #fff;
+  //background: #fff;
   box-shadow: 3px 4px 9px rgba(0, 0, 0, 0.41);
-
-  position: absolute;
-  width: 100%;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+
+  //position: absolute;
+  //width: 100%;
+  //top: 0;
   transition: all 0.3s;
   z-index: 99;
   &.fixed{
@@ -51,6 +55,8 @@
 
 
 .block-connect{
+  display: inline-block;
+  margin-right: 54px;
   a{
     display: inline-block;
     margin-right: 12px;
@@ -66,10 +72,72 @@
         transition: all 0.3s;
       }
     }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  @include tablet{
+    display: none;
   }
 }
 .head-wrap {
-  padding: 31px 0;
+  padding: 37px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: all 0.3s;
+  &.navShadow{
+    padding: 15px 0;
+    transition: all 0.3s;
+    .block-logo{
+      .logo{
+        width: 79px;
+        //transform: scale(0.7);
+        transition: all 0.3s;
+      }
+    }
+  }
+  @include tablet{
+    padding: 17px 0;
+  }
+
+}
+.block-logo{
+  //width: 182px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 999;
+  transform: translateY(-50%);
+  .logo{
+    width: 130px;
+    //transform: scale(1);
+    transition: all 0.3s;
+    @media (max-width: 1300px) {
+      width: 100px;
+      height: auto;
+    }
+  }
+  @media (max-width: 1300px) {
+    width: 150px;
+    height: 100px;
+  }
+  @include tablet{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    height: auto;
+    background: transparent;
+    box-shadow: none;
+    .logo{
+      width: 85px;
+    }
+  }
 }
 .logo{
   h1{
@@ -78,7 +146,7 @@
       display: block;
       line-height: 20px;
       img{
-        height: 27px;
+        //height: 27px;
       }
     }
   }
@@ -118,6 +186,7 @@
   position: absolute;
   top: 25px;
   left: 0;
+  z-index: 9;
   &:after{
     content: '';
     position: absolute;
@@ -144,4 +213,34 @@
     top: 4px;
     color: #1476c6;
   }
+}
+
+.btn-bars{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  padding: 0;
+  .line{
+    width: 23px;
+    height: 3px;
+    background: $c-bl;
+    border-radius: 3px;
+    display: block;
+    margin-bottom: 5px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+  }
+  @include tablet{
+    display: block;
+  }
+}
+
+@include tablet{
+
 }
