@@ -2462,6 +2462,10 @@ select {
   .list-test .notworking a:hover {
     text-decoration: underline; }
 
+.comment-fb > div > span {
+  display: block;
+  width: 100% !important; }
+
 #back-to-top {
   position: fixed;
   bottom: 25px;
