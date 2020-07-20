@@ -248,7 +248,7 @@ button[data-ripple]{
   display: block;
   width: 14px;
   height: 14px;
-  border: 1px solid $c-bl;
+  border: 1px solid #fff;
   -webkit-transition: 240ms;
   transition: 240ms;
   border-radius: 3px;
@@ -262,4 +262,164 @@ button[data-ripple]{
 
 .nestedCheckboxes input[type="checkbox"] ~ label {
   cursor: pointer;
+}
+
+//style sidebarbig
+
+.outline-left {
+  margin-bottom: 17px;
+  label{
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  > label {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+  }
+
+  input {
+    vertical-align: middle;
+  }
+  > ul {
+    > li {
+      padding: 13px 0 0 25px;
+      background: url(../img/bg-gr-02---Copy.png) top left 6px repeat-y, url(../img/bg-gr-01---Copy.png) top 21px left 6px no-repeat;
+      &:last-child{
+        background: url("../img/bg-gr-03---Copy.png") no-repeat top left 6px;
+      }
+      &:before{
+        content: '';
+        width: 1px;
+
+      }
+      > label {
+        color: $c-yl;
+        font-weight: 700;
+        margin-left: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 85%;
+      }
+
+      > ul {
+        > li {
+          padding: 13px 0 0 25px;
+          background: url(../img/bg-gr-02---Copy.png) top left 6px repeat-y, url(../img/bg-gr-01---Copy.png) top 21px left 6px no-repeat;
+          &:last-child{
+            background: url("../img/bg-gr-03---Copy.png") no-repeat top left 6px;
+          }
+          > label {
+            margin-left: 5px;
+            color: #fff;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 85%;
+          }
+
+          > ul {
+            margin-left: 25px;
+
+            li {
+              padding: 13px 0 0 25px;
+              background: url(../img/bg-gr-02---Copy.png) top left 6px repeat-y, url(../img/bg-gr-01---Copy.png) top 21px left 6px no-repeat;
+              &:last-child{
+                background: url("../img/bg-gr-03---Copy.png") no-repeat top left 6px;
+              }
+              label {
+                margin-left: 5px;
+                margin-bottom: 13px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 85%;
+              }
+
+              > ul {
+                margin-left: 25px;
+
+                li {
+                  label {
+                    margin-left: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.outline-left input[type="checkbox"][disabled="disabled"] {
+  background: transparent;
+}
+
+.outline-left input[type="checkbox"] {
+  position: relative;
+  border: none;
+  margin-bottom: -4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  margin-top: -5px;
+}
+
+.outline-left input[type="checkbox"]:checked:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  display: table;
+  width: 4px;
+  height: 9px;
+  border: 2px solid #fff;
+  border-top-width: 0px;
+  border-left-width: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.outline-left input[type="checkbox"]:after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #fff;
+  -webkit-transition: 240ms;
+  transition: 240ms;
+  border-radius: 3px;
+  background:$c-bl;
+}
+
+.outline-left input[type="checkbox"]:checked:after {
+  background-color: #00990E;
+  border-color: #00990E;
+}
+
+.outline-left input[type="checkbox"] ~ label {
+  cursor: pointer;
+}
+
+
+.btn-blue-box{
+  background: $c-bl;
+  padding: 11px 25px;
+  color: #fff;
+  border: none;
+  box-shadow: 1px 3px 8px rgba(152, 152, 152, 0.78);
+  border-radius: 3px;
 }
