@@ -73,6 +73,9 @@
     height: 100%;
     background: #1476C6 url(../img/singupnow.png);
   }
+  form{
+    margin-bottom: 0;
+  }
 }
 .sc-banner{
   position: relative;
@@ -626,8 +629,8 @@
 
 //style login---------------------------------------------
 
-.pd-100{
-  padding-top: 100px;
+.pd-150{
+  padding-top: 150px;
 }
 .container-login{
   margin-top: 145px;
@@ -1101,7 +1104,8 @@
 }
 .container-main{
   //padding-top: 100px;
-  padding-top: 136px;
+  //padding-top: 136px;
+  padding-top: 150px;
 }
 .block-user{
   margin-bottom: 38px;
@@ -1929,4 +1933,13 @@
 }
 .modal-open .modal{
   overflow-y: hidden;
+}
+
+.modal.modal-lesson .modal-dialog{
+  transform: translateY(-50%) scale(0.5);
+  transition: all 0.3s;
+}
+.modal.modal-lesson.show .modal-dialog {
+  transform: translateY(-50%) scale(1);
+  transition: all 0.3s;
 }

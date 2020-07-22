@@ -1250,6 +1250,8 @@ select {
     width: 1000px;
     height: 100%;
     background: #1476C6 url(../img/singupnow.png); }
+  .singup-bg form {
+    margin-bottom: 0; }
 
 .sc-banner {
   position: relative;
@@ -1686,8 +1688,8 @@ select {
 .container.change-container {
   max-width: 1110px; }
 
-.pd-100 {
-  padding-top: 100px; }
+.pd-150 {
+  padding-top: 150px; }
 
 .container-login {
   margin-top: 145px; }
@@ -2041,7 +2043,7 @@ select {
   position: relative; }
 
 .container-main {
-  padding-top: 136px; }
+  padding-top: 150px; }
 
 .block-user {
   margin-bottom: 38px;
@@ -2701,6 +2703,14 @@ select {
 .modal-open .modal {
   overflow-y: hidden; }
 
+.modal.modal-lesson .modal-dialog {
+  transform: translateY(-50%) scale(0.5);
+  transition: all 0.3s; }
+
+.modal.modal-lesson.show .modal-dialog {
+  transform: translateY(-50%) scale(1);
+  transition: all 0.3s; }
+
 #back-to-top {
   position: fixed;
   bottom: 25px;
@@ -2822,7 +2832,6 @@ a.btn-scrolltop {
   width: 40px;
   height: 40px;
   text-align: center;
-  line-height: 37px;
   color: #fff;
   background: #0578e8;
   bottom: 15px;
@@ -2832,6 +2841,8 @@ a.btn-scrolltop {
   -moz-border-radius: 9px;
   border-radius: 9px;
   display: none; }
+  a.btn-scrolltop i {
+    line-height: 40px; }
 
 .title-student {
   font-weight: 500;
@@ -2880,7 +2891,8 @@ a.btn-scrolltop {
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    z-index: 9; }
     .name-user-hv .block-ultility .element-ultility {
       display: block;
       background: #fff;
