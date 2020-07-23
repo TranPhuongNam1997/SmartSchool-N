@@ -25,6 +25,9 @@ button {
   button:focus {
     outline: none; }
 
+form {
+  margin-bottom: 0; }
+
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto-Regular.eot");
@@ -872,7 +875,7 @@ select {
     padding: 15px 0;
     transition: all 0.3s; }
     .head-wrap.navShadow .block-logo .logo {
-      width: 79px;
+      transform: scale(0.7);
       transition: all 0.3s; }
   @media (max-width: 991px) {
     .head-wrap {
@@ -889,6 +892,7 @@ select {
   transform: translateY(-50%); }
   .block-logo .logo {
     width: 130px;
+    transform: scale(1);
     transition: all 0.3s; }
     @media (max-width: 1300px) {
       .block-logo .logo {
@@ -1711,14 +1715,14 @@ select {
     .title-login {
       margin-bottom: 15px; } }
 
-.field-login input[type="text"]:focus ~ label.lbl-field, .field-login input[type="number"]:focus ~ label.lbl-field, .field-login input[type="password"]:focus ~ label.lbl-field, .field-login input[type="text"]:valid ~ label.lbl-field, .field-login input[type="number"]:valid ~ label.lbl-field, .field-login input[type="password"]:valid ~ label.lbl-field {
+.field-login input[type="text"]:focus ~ label.lbl-field, .field-login input[type="number"]:focus ~ label.lbl-field, .field-login input[type="password"]:focus ~ label.lbl-field, .field-login select:focus ~ label.lbl-field, .field-login input[type="text"]:valid ~ label.lbl-field, .field-login input[type="number"]:valid ~ label.lbl-field, .field-login input[type="password"]:valid ~ label.lbl-field, .field-login select:valid ~ label.lbl-field {
   font-size: 12px;
   color: #1476C6;
   top: 10px;
   transition: all 0.3s cubic-bezier(0.2, 0, 0.03, 1);
   padding: 1px 5px; }
   @media only screen and (max-width: 576px) {
-    .field-login input[type="text"]:focus ~ label.lbl-field, .field-login input[type="number"]:focus ~ label.lbl-field, .field-login input[type="password"]:focus ~ label.lbl-field, .field-login input[type="text"]:valid ~ label.lbl-field, .field-login input[type="number"]:valid ~ label.lbl-field, .field-login input[type="password"]:valid ~ label.lbl-field {
+    .field-login input[type="text"]:focus ~ label.lbl-field, .field-login input[type="number"]:focus ~ label.lbl-field, .field-login input[type="password"]:focus ~ label.lbl-field, .field-login select:focus ~ label.lbl-field, .field-login input[type="text"]:valid ~ label.lbl-field, .field-login input[type="number"]:valid ~ label.lbl-field, .field-login input[type="password"]:valid ~ label.lbl-field, .field-login select:valid ~ label.lbl-field {
       top: 5px; } }
 
 .field-login {
@@ -1733,7 +1737,7 @@ select {
     bottom: 0;
     transition: 0.3s cubic-bezier(0, 0, 0.14, 0.76);
     background: #1476C6; }
-  .field-login input[type="text"], .field-login input[type="number"], .field-login input[type="password"] {
+  .field-login input[type="text"], .field-login input[type="number"], .field-login input[type="password"], .field-login select {
     height: 57px;
     font-size: 14px;
     color: #1476C6;
@@ -1745,15 +1749,17 @@ select {
     border: none;
     position: relative;
     font-weight: 700; }
-    .field-login input[type="text"]:focus ~ label.lbl-field, .field-login input[type="number"]:focus ~ label.lbl-field, .field-login input[type="password"]:focus ~ label.lbl-field {
+    .field-login input[type="text"]:focus ~ label.lbl-field, .field-login input[type="number"]:focus ~ label.lbl-field, .field-login input[type="password"]:focus ~ label.lbl-field, .field-login select:focus ~ label.lbl-field {
       color: #1476C6; }
-    .field-login input[type="text"]:focus ~ span, .field-login input[type="number"]:focus ~ span, .field-login input[type="password"]:focus ~ span {
+    .field-login input[type="text"]:focus ~ span, .field-login input[type="number"]:focus ~ span, .field-login input[type="password"]:focus ~ span, .field-login select:focus ~ span {
       transition: 0.3s cubic-bezier(0, 0, 0.14, 0.76);
       width: 100%; }
     @media only screen and (max-width: 576px) {
-      .field-login input[type="text"], .field-login input[type="number"], .field-login input[type="password"] {
+      .field-login input[type="text"], .field-login input[type="number"], .field-login input[type="password"], .field-login select {
         height: 45px;
         padding: 22px 18px 10px; } }
+    .field-login input[type="text"]:-internal-autofill-selected, .field-login input[type="number"]:-internal-autofill-selected, .field-login input[type="password"]:-internal-autofill-selected, .field-login select:-internal-autofill-selected {
+      color: #1476C6; }
   .field-login label.lbl-field {
     position: absolute;
     top: 19px;
@@ -1767,6 +1773,16 @@ select {
     @media only screen and (max-width: 576px) {
       .field-login label.lbl-field {
         top: 13px; } }
+  .field-login .field-select {
+    background: #E2EEF7 url(../img/icon-caret-down-02.svg);
+    background-repeat: no-repeat;
+    background-position: top 33px right 16px;
+    background-size: 8px 5px; }
+    .field-login .field-select.active {
+      background: #E2EEF7 url(../img/icon-up-select-03.svg);
+      background-repeat: no-repeat;
+      background-position: top 33px right 16px;
+      background-size: 8px 5px; }
 
 .btn-blue {
   height: 57px;
@@ -1806,7 +1822,7 @@ select {
     background: #fff;
     color: #1476C6; }
 
-.show-pass {
+.show-pass, .show-pass2 {
   background: none;
   padding: 5px;
   position: absolute;
@@ -1814,12 +1830,12 @@ select {
   transform: translateY(-50%);
   right: 22px;
   border: none; }
-  .show-pass img {
+  .show-pass img, .show-pass2 img {
     width: 20px;
     height: 18px; }
-    .show-pass img.img-show-pass {
+    .show-pass img.img-show-pass, .show-pass2 img.img-show-pass {
       display: block; }
-    .show-pass img.img-hide-pass {
+    .show-pass img.img-hide-pass, .show-pass2 img.img-hide-pass {
       display: none; }
 
 .block-cn-lg {
@@ -2711,6 +2727,181 @@ select {
   transform: translateY(-50%) scale(1);
   transition: all 0.3s; }
 
+.title-document {
+  margin-bottom: 15px; }
+
+.block-search .field-login {
+  margin-bottom: 26px;
+  float: left;
+  margin-right: 9px; }
+  .block-search .field-login input, .block-search .field-login select {
+    width: 206px; }
+    .block-search .field-login input:focus, .block-search .field-login select:focus {
+      outline: auto; }
+
+.search-document {
+  background: #1476C6;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  height: 57px;
+  padding: 0 41px;
+  margin-left: 5px; }
+
+.block-document .item-document {
+  display: block;
+  border-radius: 3px;
+  margin-bottom: 9px; }
+  .block-document .item-document a {
+    background: #fff;
+    padding: 13px 46px 13px 19px; }
+    .block-document .item-document a div {
+      color: #1476C6; }
+    .block-document .item-document a span {
+      background: #00990E;
+      color: #fff;
+      font-weight: 700;
+      font-size: 12px;
+      border-radius: 3px;
+      display: inline-block;
+      padding: 5px 9px; }
+  .block-document .item-document:hover a {
+    background: #ECF2F9; }
+
+.view-more-doc {
+  margin-top: 30px;
+  text-align: center; }
+
+.list-review .txt-question {
+  margin-bottom: 23px; }
+.list-review .item-review {
+  padding: 24px;
+  font-weight: 500;
+  color: #606060;
+  margin-bottom: 9px;
+  border-radius: 3px; }
+  .list-review .item-review:nth-child(odd) {
+    background: #fff; }
+  .list-review .item-review:nth-child(even) {
+    background: #ECF2F9; }
+  .list-review .item-review .item-anwer {
+    margin-bottom: 11px; }
+    .list-review .item-review .item-anwer > label {
+      margin-left: 16px;
+      font-weight: 500; }
+
+.review-wrap h3 {
+  margin: 35px 0 23px;
+  text-transform: unset; }
+
+.review-bottom {
+  margin-top: 30px;
+  text-align: right; }
+  .review-bottom button {
+    margin-left: 14px; }
+    .review-bottom button.threads {
+      width: 108px; }
+
+.progress-clock .clockstart {
+  width: 44px;
+  width: 54px;
+  margin-right: 12px; }
+  .progress-clock .clockstart img {
+    width: 37px;
+    display: block;
+    margin: 0 0 3px; }
+  .progress-clock .clockstart > span {
+    text-align: center;
+    font-weight: 700;
+    color: #1476C6;
+    display: block;
+    position: relative; }
+    .progress-clock .clockstart > span sub {
+      position: absolute;
+      right: -3px;
+      top: 7px; }
+.progress-clock .clockfinish {
+  width: 44px;
+  width: 57px;
+  margin-left: 12px; }
+  .progress-clock .clockfinish img {
+    width: 37px;
+    display: block;
+    margin: 0 0 3px; }
+  .progress-clock .clockfinish > span {
+    text-align: center;
+    font-weight: 700;
+    color: #1476C6;
+    display: block;
+    position: relative; }
+    .progress-clock .clockfinish > span sub {
+      position: absolute;
+      right: -3px;
+      top: 7px; }
+
+.progress-clock {
+  margin-bottom: 39px; }
+  .progress-clock .progress-tooltip:after {
+    background: #AAD9F9; }
+  .progress-clock .progress::-webkit-progress-bar {
+    background-color: #1476C6; }
+  .progress-clock .progress::-webkit-progress-value {
+    border-radius: 5px;
+    background-color: #1476C6;
+    width: 0; }
+  .progress-clock .progress::-moz-progress-bar {
+    border-radius: 5px;
+    background-color: #1476C6; }
+  .progress-clock .progress::-ms-fill {
+    border-radius: 5px;
+    background-color: #1476C6;
+    border: none; }
+  .progress-clock .progress::-webkit-progress-bar {
+    background-color: transparent; }
+  .progress-clock .progress::-moz-progress-bar {
+    background-color: transparent;
+    border-radius: 5px; }
+
+.progress-clock .btn-blue-box {
+  width: 157px;
+  margin-left: 29px; }
+
+.timeup-review {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%; }
+  .timeup-review span {
+    display: block;
+    color: #1476C6;
+    font-weight: 700; }
+    .timeup-review span span {
+      display: inline; }
+  .timeup-review > span:nth-child(1) {
+    margin: 0 auto 6px; }
+  .timeup-review > span:nth-child(2) {
+    width: 1px;
+    height: 19px;
+    background: #1476C6;
+    margin: auto; }
+  .timeup-review > span:nth-child(3) {
+    margin: 6px auto 0; }
+
+.txt-test-subject {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 700; }
+
+.nb-complete {
+  div: las; }
+  .nb-complete > div {
+    color: #FFDA00;
+    font-weight: 700;
+    margin-bottom: 14px; }
+
 #back-to-top {
   position: fixed;
   bottom: 25px;
@@ -2866,7 +3057,8 @@ a.btn-scrolltop {
       color: #1476C6;
       font-weight: 500; }
     .list-info li span {
-      font-weight: 500; }
+      font-weight: 500;
+      word-wrap: break-word; }
 
 .name-user-hv {
   position: relative; }
@@ -3256,6 +3448,73 @@ button[data-ripple] {
   border: none;
   box-shadow: 1px 3px 8px rgba(152, 152, 152, 0.78);
   border-radius: 3px; }
+
+.btn-viewmore {
+  background: #fff;
+  padding: 0 26px;
+  height: 40px;
+  border: 1px solid #1476C6;
+  border-radius: 3px;
+  color: #1476C6;
+  position: relative;
+  transition: all 0.3s;
+  font-weight: 500; }
+  .btn-viewmore:hover {
+    transition: all 0.3s;
+    border: 1px solid #1476C6;
+    background: #1476C6;
+    color: #fff; }
+
+.item-anwer input[type="checkbox"][disabled="disabled"] {
+  background: transparent; }
+
+.item-anwer input[type="checkbox"] {
+  position: relative;
+  border: none;
+  margin-bottom: -4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  margin-top: -5px; }
+
+.item-anwer input[type="checkbox"]:checked:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  display: table;
+  width: 5px;
+  height: 9px;
+  border: 2px solid #fff;
+  border-top-width: 0px;
+  border-left-width: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.item-anwer input[type="checkbox"]:after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #1476C6;
+  -webkit-transition: 240ms;
+  transition: 240ms;
+  border-radius: 50%;
+  background: #fff; }
+
+.item-anwer input[type="checkbox"]:checked:after {
+  background-color: #1476C6;
+  border-color: #1476C6;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.52); }
+
+.item-anwer input[type="checkbox"]:checked ~ label {
+  color: #1476C6;
+  font-weight: 700; }
+
+.item-anwer input[type="checkbox"] ~ label {
+  cursor: pointer; }
 
 .slick-slide img {
   width: 100%; }

@@ -91,8 +91,8 @@
     transition: all 0.3s;
     .block-logo{
       .logo{
-        width: 79px;
-        //transform: scale(0.7);
+        //width: 79px;
+        transform: scale(0.7);
         transition: all 0.3s;
       }
     }
@@ -114,7 +114,7 @@
   transform: translateY(-50%);
   .logo{
     width: 130px;
-    //transform: scale(1);
+    transform: scale(1);
     transition: all 0.3s;
     @media (max-width: 1300px) {
       width: 100px;
