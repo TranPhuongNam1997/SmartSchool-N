@@ -2198,10 +2198,48 @@
   font-weight: 700;
 }
 .nb-complete{
+  margin-bottom: 26px;
   >div{
     color: $c-yl;
     font-weight: 700;
     margin-bottom: 14px;
   }
-  div:las
+
+}
+.side-bar.reviewbar-left{
+  padding-top: 43px;
+}
+.list-question-nb{
+  padding: 0 51px;
+  column-count: 3;
+  .item-question-nb{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    color: $c-bl;
+    line-height: 18px;
+    margin-bottom: 9px;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    &.active{
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.28);
+      background: $c-bl;
+      color: #fff;
+    }
+  }
+}
+.back-page{
+  position: absolute;
+  left: 50%;
+  bottom: 91px;
+  transform: translateX(-50%);
+  color: #fff;
+  &:hover{
+    text-decoration: underline;
+    color: #fff;
+  }
 }

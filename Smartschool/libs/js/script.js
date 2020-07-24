@@ -158,7 +158,14 @@ $(document).ready(function () {
     });
     $('.field-select').focusout(function () {
         $(this).removeClass('active');
-    })
+    });
+
+    //js datepicker
+    // jQuery('.datepicker-gd').datetimepicker({
+    //     timepicker:false,
+    //     format: 'd/m/Y'
+    // });
+
 
 
 
@@ -347,7 +354,46 @@ $(document).ready(function () {
 
     //videoanimation();
 
+    (function($){
+        $(window).on("load",function(){
+
+            /* Page Scroll to id fn call */
+            $(".list-question-nb a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+                highlightSelector:".list-question-nb a",
+                top: "50%"
+            });
+
+            /* demo functions */
+            // $("a[rel='next']").click(function(e){
+            //     e.preventDefault();
+            //     var to=$(this).parent().parent("section").next().attr("id");
+            //     $.mPageScroll2id("scrollTo",to);
+            // });
+
+        });
+    })(jQuery);
+
+    changState();
+
+
+
 });
+
+//check state on tap
+
+function changeState()
+{
+    if ($('.item-anwer input').checked)
+    {
+        trangthai = 1;
+        console.log('da thay doi trang thai')
+    } else {
+        trangthai = 0;
+    }
+}
+
+
+
 //effect button
 $(function($) {
 

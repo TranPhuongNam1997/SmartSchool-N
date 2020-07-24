@@ -1023,9 +1023,6 @@ select {
       transform-origin: right;
       transform: scaleX(0);
       transition: transform 0.75s cubic-bezier(0.19, 1, 0.22, 1); }
-    @media (max-width: 1300px) {
-      .menu > li > a {
-        padding: 19px 19px; } }
     @media (max-width: 991px) {
       .menu > li > a {
         padding: 15px 19px; }
@@ -1080,9 +1077,6 @@ select {
 @media (max-width: 991px) {
   .menu > li.has-dropdown {
     position: relative; } }
-@media (max-width: 1300px) {
-  .menu {
-    margin-left: 151px; } }
 @media (max-width: 991px) {
   .menu {
     margin-left: 0; }
@@ -2896,11 +2890,45 @@ select {
   font-weight: 700; }
 
 .nb-complete {
-  div: las; }
+  margin-bottom: 26px; }
   .nb-complete > div {
     color: #FFDA00;
     font-weight: 700;
     margin-bottom: 14px; }
+
+.side-bar.reviewbar-left {
+  padding-top: 43px; }
+
+.list-question-nb {
+  padding: 0 51px;
+  column-count: 3; }
+  .list-question-nb .item-question-nb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    color: #1476C6;
+    line-height: 18px;
+    margin-bottom: 9px;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    font-weight: 700; }
+    .list-question-nb .item-question-nb.active {
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.28);
+      background: #1476C6;
+      color: #fff; }
+
+.back-page {
+  position: absolute;
+  left: 50%;
+  bottom: 91px;
+  transform: translateX(-50%);
+  color: #fff; }
+  .back-page:hover {
+    text-decoration: underline;
+    color: #fff; }
 
 #back-to-top {
   position: fixed;
@@ -3059,6 +3087,20 @@ a.btn-scrolltop {
     .list-info li span {
       font-weight: 500;
       word-wrap: break-word; }
+    .list-info li input {
+      height: 35px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      width: 100%;
+      padding: 7px 10px; }
+    .list-info li select {
+      height: 35px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      width: 100%;
+      padding: 7px 10px; }
+  .list-info.update li label {
+    margin-bottom: 10px; }
 
 .name-user-hv {
   position: relative; }

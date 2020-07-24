@@ -18,6 +18,7 @@
     <script type="text/javascript" src="libs/js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="libs/js/effect-modal.js"></script>
+    <script type="text/javascript" src="libs/js/menu_right.js"></script>
 
     <script type="text/javascript" src="libs/js/script.js"></script>
 
@@ -187,7 +188,7 @@
         <div class="container-main">
             <div class="row-main-8">
                 <div class="col-main-17">
-                    <div class="side-bar">
+                    <div class="side-bar reviewbar-left">
                         <div class="block-user">
                             <div class="box-avt">
                                 <img src="img/avt-user.png" alt="ảnh">
@@ -199,18 +200,19 @@
                                 <div>7/30 <span>câu</span></div>
                             </div>
                         </div>
-                        <ul class="list-sidebar">
-                            <li class="active">
-                                <a href="#">Khóa học đã mua</a>
-                            </li>
-                            <li>
-                                <a href="#">Khóa học đã mua</a>
-                            </li>
-                            <li>
-                                <a href="#">Khóa học đã mua</a>
-                            </li>
-                        </ul>
+                        <div class="list-question-nb">
+                            <a href="#question1" class="item-question-nb active">1</a>
+                            <a href="#question2" class="item-question-nb active">2</a>
+                            <a href="#question3" class="item-question-nb">3</a>
+                            <a href="#question4" class="item-question-nb">4</a>
+                            <a href="#question5" class="item-question-nb">5</a>
+                            <a href="#question6" class="item-question-nb">6</a>
+                            <a href="#question7" class="item-question-nb">7</a>
+                            <a href="#question8" class="item-question-nb">8</a>
+                            <a href="#question9" class="item-question-nb">9</a>
+                        </div>
                         <a href="#" class="btn-logout" data-ripple>Tạm dừng</a>
+                        <a href="#" class="back-page">Quay lại</a>
                     </div>
                 </div>
                 <div class="col-main-83">
@@ -233,35 +235,35 @@
                                 <img src="img/icon-finishclock-02.svg" alt="ảnh">
                                 <span><span>00:00</span><sub>'</sub></span>
                             </div>
-                            <button class="btn-blue-box">Mua ngay</button>
+                            <button class="btn-blue-box" data-ripple>Mua ngay</button>
                         </div>
                         <ul class="list-review">
-                            <li class="item-review">
+                            <li class="item-review" id="question1">
                                 <div class="txt-question">1. Trong số 40 032 chữ số 0 ở hàng: .........</div>
                                 <div class="row">
                                     <div class="col-10">
                                         <div class="row">
                                             <div class="col-6">
                                                 <div class="item-anwer">
-                                                    <input type="checkbox" id="choose-da1">
+                                                    <input type="checkbox" id="choose-da1" onclick="changeState()">
                                                     <label for="choose-da1">A. <span>Hàng trăm</span></label>
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="item-anwer">
-                                                    <input type="checkbox" id="choose-da2">
+                                                    <input type="checkbox" id="choose-da2" onclick="changeState()">
                                                     <label for="choose-da2">B. <span>Hàng nghìn</span></label>
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="item-anwer">
-                                                    <input type="checkbox" id="choose-da3">
+                                                    <input type="checkbox" id="choose-da3" onclick="changeState()">
                                                     <label for="choose-da3">C. <span>Hàng nghìn và hàng trăm</span></label>
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="item-anwer">
-                                                    <input type="checkbox" id="choose-da4">
+                                                    <input type="checkbox" id="choose-da4" onclick="changeState()">
                                                     <label for="choose-da4">D. <span>Hàng trăm và hàng chục</span></label>
                                                 </div>
                                             </div>
@@ -269,8 +271,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item-review">
-                                <div class="txt-question">1. Trong số 40 032 chữ số 0 ở hàng: .........</div>
+                            <li class="item-review" id="question2">
+                                <div class="txt-question">2. Trong số 40 032 chữ số 0 ở hàng: .........</div>
                                 <div class="row">
                                     <div class="col-10">
                                         <div class="row">
@@ -302,8 +304,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item-review">
-                                <div class="txt-question">1. Trong số 40 032 chữ số 0 ở hàng: .........</div>
+                            <li class="item-review" id="question3">
+                                <div class="txt-question">3. Trong số 40 032 chữ số 0 ở hàng: .........</div>
                                 <div class="row">
                                     <div class="col-10">
                                         <div class="row">
@@ -335,8 +337,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item-review">
-                                <div class="txt-question">1. Trong số 40 032 chữ số 0 ở hàng: .........</div>
+                            <li class="item-review" id="question4">
+                                <div class="txt-question">4. Trong số 40 032 chữ số 0 ở hàng: .........</div>
                                 <div class="row">
                                     <div class="col-10">
                                         <div class="row">
@@ -368,8 +370,140 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item-review">
-                                <div class="txt-question">1. Trong số 40 032 chữ số 0 ở hàng: .........</div>
+                            <li class="item-review" id="question5">
+                                <div class="txt-question">5. Trong số 40 032 chữ số 0 ở hàng: .........</div>
+                                <div class="row">
+                                    <div class="col-10">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="item-anwer">
+                                                    <input type="checkbox">
+                                                    <label>A. <span>Hàng trăm</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="item-anwer">
+                                                    <input type="checkbox">
+                                                    <label>B. <span>Hàng nghìn</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="item-anwer">
+                                                    <input type="checkbox">
+                                                    <label>C. <span>Hàng nghìn và hàng trăm</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="item-anwer">
+                                                    <input type="checkbox">
+                                                    <label>D. <span>Hàng trăm và hàng chục</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-review" id="question6">
+                                <div class="txt-question">6. Trong số 40 032 chữ số 0 ở hàng: .........</div>
+                                <div class="row">
+                                    <div class="col-10">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="item-anwer">
+                                                    <input type="checkbox">
+                                                    <label>A. <span>Hàng trăm</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="item-anwer">
+                                                    <input type="checkbox">
+                                                    <label>B. <span>Hàng nghìn</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="item-anwer">
+                                                    <input type="checkbox">
+                                                    <label>C. <span>Hàng nghìn và hàng trăm</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="item-anwer">
+                                                    <input type="checkbox">
+                                                    <label>D. <span>Hàng trăm và hàng chục</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-review" id="question7">
+                                <div class="txt-question">7. Trong số 40 032 chữ số 0 ở hàng: .........</div>
+                                <div class="row">
+                                    <div class="col-10">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="item-anwer">
+                                                    <input type="checkbox">
+                                                    <label>A. <span>Hàng trăm</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="item-anwer">
+                                                    <input type="checkbox">
+                                                    <label>B. <span>Hàng nghìn</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="item-anwer">
+                                                    <input type="checkbox">
+                                                    <label>C. <span>Hàng nghìn và hàng trăm</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="item-anwer">
+                                                    <input type="checkbox">
+                                                    <label>D. <span>Hàng trăm và hàng chục</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-review" id="question8">
+                                <div class="txt-question">8. Trong số 40 032 chữ số 0 ở hàng: .........</div>
+                                <div class="row">
+                                    <div class="col-10">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="item-anwer">
+                                                    <input type="checkbox">
+                                                    <label>A. <span>Hàng trăm</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="item-anwer">
+                                                    <input type="checkbox">
+                                                    <label>B. <span>Hàng nghìn</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="item-anwer">
+                                                    <input type="checkbox">
+                                                    <label>C. <span>Hàng nghìn và hàng trăm</span></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="item-anwer">
+                                                    <input type="checkbox">
+                                                    <label>D. <span>Hàng trăm và hàng chục</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-review" id="question9">
+                                <div class="txt-question">9. Trong số 40 032 chữ số 0 ở hàng: .........</div>
                                 <div class="row">
                                     <div class="col-10">
                                         <div class="row">
