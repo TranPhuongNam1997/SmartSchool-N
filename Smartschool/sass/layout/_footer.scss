@@ -149,17 +149,18 @@ footer{
 
 a.btn-scrolltop {
   position: fixed;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
   text-align: center;
   color: #fff;
   background: rgb(5, 120, 232);
   bottom: 15px;
   right: 15px;
   font-size: 25px;
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
-  border-radius: 9px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   display: none;
   i{
     line-height: 40px;
@@ -284,5 +285,61 @@ a.btn-scrolltop {
   }
   &:hover .block-ultility{
     display: block;
+  }
+}
+
+.learning-ls{
+  position: fixed;
+  right: 15px;
+  bottom: 72px;
+  .block-learning{
+    background: #0578e8;
+    border-radius: 3px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover{
+      background: #1a7fe2;
+      transition: all 0.3s;
+    }
+    img{
+      width: 16px;
+      height: 25px;
+    }
+  }
+  .learning-lesson{
+    position: absolute;
+    right: 0;
+    bottom: 150%;
+    width: 243px;
+    height: 117px;
+    padding: 27px;
+    background: #0578e8;
+    border-radius: 3px;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    &.active{
+      bottom: 127%;
+      transition: all 0.3s;
+      opacity: 1;
+      visibility: visible;
+    }
+    &:hover{
+      background: #1a7fe2;
+    }
+    &:after{
+      content: '';
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid #0065C8;
+      position: absolute;
+      right: 17px;
+      top: 99%;
+    }
   }
 }

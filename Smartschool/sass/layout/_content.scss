@@ -2230,6 +2230,16 @@
       background: $c-bl;
       color: #fff;
     }
+    &.exactly{
+      background: $c-gr;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.28);
+      color: #fff;
+    }
+    &.wrong{
+      background: $c-red;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.28);
+      color: #fff;
+    }
   }
 }
 .back-page{
@@ -2241,5 +2251,135 @@
   &:hover{
     text-decoration: underline;
     color: #fff;
+  }
+}
+
+
+// style dap an ------------------------------------
+.answer-block{
+  border-left: 1px solid #aaa;
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  padding-left: 12px;
+  flex-direction: column;
+  justify-content: center;
+  .txt-answer{
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+
+  .sp-question{
+    color: #606060;
+    display: block;
+    font-weight: 500;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+.correct-answer{
+  background: #fff;
+  .txt-answer{
+    color: $c-gr;
+  }
+  .item-anwer input[type="checkbox"]:checked:after{
+    background-color: $c-gr;
+    border-color: $c-gr;
+  }
+  .item-anwer input[type="checkbox"]:checked ~ label{
+    color: $c-gr;
+  }
+}
+.wrong-answer{
+  background: #fff;
+  .txt-answer{
+    color: $c-red;
+  }
+  .item-anwer input[type="checkbox"]:checked:after{
+    background-color: $c-red;
+    border-color: $c-red;
+  }
+  .item-anwer input[type="checkbox"]:checked ~ label{
+    color: $c-red;
+  }
+}
+.list-review .item-review.correct-answer , .list-review .item-review.wrong-answer{
+  background: #fff;
+}
+
+.block-timework{
+  margin-bottom: 18px;
+  .item-timework{
+    background: #fff;
+    padding: 6px 19px 10px;
+    display: inline-block;
+    width: 216px;
+    margin-right: 9px;
+    border-radius: 3px;
+    img{
+      width: 37px;
+      height: 36px;
+      display: inline-block;
+      margin-right: 11px;
+    }
+    .txt-timework{
+      display: inline-block;
+      div{
+        font-weight: 500;
+      }
+      div:first-child{
+        margin-bottom: 5px;
+      }
+      .minute-work.cl-blue{
+        color: $c-bl;
+        font-weight: 700;
+      }
+      .minute-work.cl-green{
+        color: $c-gr;
+        font-weight: 700;
+      }
+
+    }
+  }
+}
+.back-page.answer{
+  position: unset;
+  display: block;
+  text-align: center;
+  transform: none;
+  margin-top: 60px;
+}
+
+
+//style tat ca khoa hoc
+.all-course{
+  .block-white{
+    padding: 25px 30px 30px;
+  }
+  .element-lesson{
+    margin-bottom: 25px;
+  }
+}
+.title-all-sourse{
+  font-size: 16px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 32px;
+  margin-top: 5px;
+}
+
+.price-rate{
+  margin-top: 16px;
+  .txt-price-source{
+    font-weight: 700;
+    color: $c-bl;
+  }
+  .rate-ob{
+    margin-top: 0;
+    i{
+      color: #FFC200;
+    }
   }
 }

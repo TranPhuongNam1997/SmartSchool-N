@@ -351,6 +351,11 @@ $(document).ready(function () {
         }
     });
 
+    //js bai hoc
+
+    $('.block-learning').click(function () {
+        $('.learning-lesson').toggleClass('active');
+    });
 
     //videoanimation();
 
@@ -363,17 +368,10 @@ $(document).ready(function () {
                 top: "50%"
             });
 
-            /* demo functions */
-            // $("a[rel='next']").click(function(e){
-            //     e.preventDefault();
-            //     var to=$(this).parent().parent("section").next().attr("id");
-            //     $.mPageScroll2id("scrollTo",to);
-            // });
-
         });
     })(jQuery);
 
-    changState();
+    // changState();
 
 
 
