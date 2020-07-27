@@ -5,11 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Đăng ký</title>
+    <title>Danh sách mẫu đề thi</title>
 
     <link rel="stylesheet" href="libs/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="libs/css/all.css">
+    <link rel="stylesheet" href="libs/css/jquery.datetimepicker.min.css" />
     <link rel="stylesheet" href="libs/css/slick.css">
     <link rel="stylesheet" href="libs/css/slick-theme.css">
 
@@ -17,6 +18,7 @@
 
     <script type="text/javascript" src="libs/js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
+    <script type="text/javascript"  src="libs/js/jquery.datetimepicker.full.min.js"></script>
     <script type="text/javascript" src="libs/js/effect-modal.js"></script>
 
     <script type="text/javascript" src="libs/js/script.js"></script>
@@ -182,118 +184,168 @@
 
         </nav>
     </header>
-    <main class="pd-150">
-        <div class="bg-registation">
-            <div class="container-regis">
-                <div class="shadow-regis">
-                    <div class="row-regis-63">
 
-                        <div class="col-regis-6">
-                            <div class="logo-login">
-                                <img src="img/logo-18.svg" alt="ảnh">
-                            </div>
-                            <h3 class="title-login">Đăng ký</h3>
-                            <form action="#" class="form-login">
-                                <div class="field-login">
-                                    <input type="text" required>
-                                    <label class="lbl-field">Email</label>
-                                    <span></span>
-                                </div>
-                                <div class="field-login">
-                                    <input type="password" required>
-                                    <label class="lbl-field">Số điện thoại</label>
-                                    <span></span>
-                                </div>
-                                <div class="field-login">
-                                    <input type="password" required>
-                                    <label class="lbl-field">Mật khẩu</label>
-                                    <span></span>
-                                </div>
-                                <div class="field-login">
-                                    <input type="password" required>
-                                    <label class="lbl-field">Nhập lại mật khẩu</label>
-                                    <span></span>
-                                </div>
-                                <button type="submit" class="btn-blue" data-ripple>Đăng ký</button>
-                            </form>
-                        </div>
-                        <div class="col-regis-6">
-                            <div class="or">
-                                <div>Hoặc</div>
-                            </div>
-                            <div class="login-other regis-other">
-                                <button class="block-cn-lg" data-ripple>
-                                    <img src="img/fb-icon-lg-02.svg" alt="ảnh">
-                                    <span>Đăng ký bằng tài khoản Facebook</span>
-                                </button>
-                                <button class="block-cn-lg gg-cn-lg" data-ripple>
-                                    <img src="img/gg-icon-lg-03.svg" alt="ảnh">
-                                    <span>Đăng ký bằng tài khoản Google</span>
-                                </button>
-                            </div>
-                            <div class="sugges-regis ">
-                                <span>Bạn đã có tài khoản</span>
-                                <a href="javascript:0;" data-toggle="modal" data-target="#myModal2" data-backdrop="static" data-keyboard="false">Đăng nhập ngay</a>
-                            </div>
-                        </div>
-
+    <main class="main-gd">
+        <div class="container-main">
+            <div class="row-main-8">
+                <div class="col-md-3">
+                    <div class="side-barbig">
+                        <h3 class="title-side-barbig">thi tốt nghiệp thpt quốc gia 2020</h3>
+                        <ul class="list-exam">
+                            <li class="active"><a href="#">Đề thi mẫu năm 2020</a></li>
+                            <li><a href="#">Đề thi tốt nghiệp những năm trước</a></li>
+                            <li><a href="#">Đề thi mẫu năm 2020</a></li>
+                            <li><a href="#">Đề thi tốt nghiệp những năm trước</a></li>
+                        </ul>
                     </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="course-block h-100">
+                        <h3 class="title-main text-normal">Mẫu đề thi thử tốt nghiệp THPT quốc gia năm 2020</h3>
+                        <div class="filter-exam flex-center">
+                            <img class="icon-filter" src="img/icon-filter-02.svg" alt="ảnh">
+                            <ul>
+                                <li>
+                                    <label>Chọn bộ môn</label>
+                                    <select name="">
+                                        <option value="">Toán</option>
+                                        <option value="">Lý</option>
+                                        <option value="">Hóa</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label>Vùng miền</label>
+                                    <select name="">
+                                        <option value="">Miền Bắc</option>
+                                        <option value="">Miền Trung</option>
+                                        <option value="">Miền Nam</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="block-document test-sample">
+                            <li class="item-document">
+                                <a href="#">
+                                    <div>Tài liệu: Đạo hàm bậc nhât</div>
+                                    <span>Miễn phí</span>
+                                </a>
+                            </li>
+                            <li class="item-document">
+                                <a href="#">
+                                    <div>Tài liệu: Đạo hàm bậc nhât</div>
+                                </a>
+                            </li>
+                            <li class="item-document">
+                                <a href="#">
+                                    <div>Tài liệu: Đạo hàm bậc nhât</div>
+                                    <span>Miễn phí</span>
+                                </a>
+                            </li>
+                            <li class="item-document">
+                                <a href="#">
+                                    <div>Tài liệu: Đạo hàm bậc nhât</div>
+                                </a>
+                            </li>
+                            <li class="item-document">
+                                <a href="#">
+                                    <div>Tài liệu: Đạo hàm bậc nhât</div>
+                                    <span>Miễn phí</span>
+                                </a>
+                            </li>
+                            <li class="item-document">
+                                <a href="#">
+                                    <div>Tài liệu: Đạo hàm bậc nhât</div>
+                                    <span>Miễn phí</span>
+                                </a>
+                            </li>
+                            <li class="item-document">
+                                <a href="#">
+                                    <div>Tài liệu: Đạo hàm bậc nhât</div>
+                                </a>
+                            </li>
+                            <li class="item-document">
+                                <a href="#">
+                                    <div>Tài liệu: Đạo hàm bậc nhât</div>
+                                    <span>Miễn phí</span>
+                                </a>
+                            </li>
+                            <li class="item-document">
+                                <a href="#">
+                                    <div>Tài liệu: Đạo hàm bậc nhât</div>
+                                </a>
+                            </li>
+                            <li class="item-document">
+                                <a href="#">
+                                    <div>Tài liệu: Đạo hàm bậc nhât</div>
+                                    <span>Miễn phí</span>
+                                </a>
+                            </li>
+                            <li class="item-document">
+                                <a href="#">
+                                    <div>Tài liệu: Đạo hàm bậc nhât</div>
+                                    <span>Miễn phí</span>
+                                </a>
+                            </li>
+                            <li class="item-document">
+                                <a href="#">
+                                    <div>Tài liệu: Đạo hàm bậc nhât</div>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
     </main>
+
 </div>
-<!--modal-->
-<div class="modal fade modal-small md-otp" id="myModal2">
-    <div class="modal-dialog">
-        <div class="md-content modal-content">
-            <div class="head-modal flex-between">
-                <h3>Đăng nhập</h3>
-                <button class="btn-close" data-dismiss="modal"><i class="fas fa-times"></i></button>
+<footer class="footer-gd">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <h3 class="logo-foot">
+                    <a href="#"><img src="img/logo-foot-03.svg" alt="ảnh"></a>
+                </h3>
+                <div class="slogan-compnany">Vietnam Independent Directors Association</div>
+                <div class="contact-company">
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i><span>12 Hòa Mã, Phường Phạm Đình Hồ, Quận Hai Bà Trưng, Hà Nội</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i><span>Hotline 0708.060.011</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i><span>Hotline 0708.060.011</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="connect-footer">
+                    <a href=""><i class="fab fa-google-plus-g"></i></a>
+                    <a href=""><i class="fas fa-wifi"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-vimeo-v"></i></a>
+                </div>
             </div>
-            <div class="main-modal">
-                <div class="txt-noti">Dòng text hiển thị thông báo</div>
-                <form action="#" class="form-login">
-                    <div class="field-login">
-                        <input type="text" required="">
-                        <label class="lbl-field">Tài khoản</label>
-                        <span></span>
-                    </div>
-                    <div class="field-login">
-                        <input type="password" required="">
-                        <label class="lbl-field">Mật khẩu</label>
-                        <span></span>
-                    </div>
-                    <button type="submit" class="btn-blue" data-ripple="">Đăng nhập</button>
-
-                    <div class="flex-between regis-forgot">
-                        <a href="#">Đăng ký</a>
-                        <a href="#">Quên mật khẩu</a>
-
-                    </div>
-                    <div class="or">
-                        <div>Hoặc</div>
-                    </div>
-                    <div class="login-other">
-                        <div class="row-other-6">
-                            <div class="col-other-6">
-                                <button class="block-cn-lg" data-ripple="">
-                                    <img src="img/fb-icon-lg-02.svg" alt="ảnh">
-                                    <span>Facebook</span>
-                                </button>
-                            </div>
-                            <div class="col-other-6">
-                                <button class="block-cn-lg gg-cn-lg" data-ripple="">
-                                    <img src="img/gg-icon-lg-03.svg" alt="ảnh">
-                                    <span>Google</span>
-                                </button>
-                            </div>
-                        </div>
+            <div class="col-8">
+                <form action="#">
+                    <div class="foot-right flex-between">
+                        <div class="txt-register">Vui lòng để lại email</div>
+                        <input type="text" class="email-regis" placeholder="Email đăng ký">
+                        <button type="submit" class="btn-regis-now" data-ripple>đăng ký ngay</button>
                     </div>
                 </form>
             </div>
+            <div class="col-12">
+                <div class="coppy-right">© 2020 All Rights Reserved</div>
+            </div>
         </div>
     </div>
-</div>
+    <a href="#top" id="go_top" class="btn-scrolltop"><i class="fa fa-angle-up"></i></a>
+</footer>
 </body>
 </html>
