@@ -182,7 +182,7 @@
 
         </nav>
     </header>
-    <main class="pd-100">
+    <main class="pd-150">
         <div class="bg-registation">
             <div class="container-regis">
                 <div class="shadow-regis">
@@ -233,7 +233,7 @@
                             </div>
                             <div class="sugges-regis ">
                                 <span>Bạn đã có tài khoản</span>
-                                <a href="#">Đăng nhập ngay</a>
+                                <a href="javascript:0;" data-toggle="modal" data-target="#myModal2" data-backdrop="static" data-keyboard="false">Đăng nhập ngay</a>
                             </div>
                         </div>
 
@@ -242,6 +242,57 @@
             </div>
         </div>
     </main>
+</div>
+<!--modal-->
+<div class="modal fade modal-small md-otp" id="myModal2">
+    <div class="modal-dialog">
+        <div class="md-content modal-content">
+            <div class="head-modal flex-between">
+                <h3>Đăng nhập</h3>
+                <button class="btn-close" data-dismiss="modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="main-modal">
+                <form action="#" class="form-login">
+                    <div class="field-login">
+                        <input type="text" required="">
+                        <label class="lbl-field">Tài khoản</label>
+                        <span></span>
+                    </div>
+                    <div class="field-login">
+                        <input type="password" required="">
+                        <label class="lbl-field">Mật khẩu</label>
+                        <span></span>
+                    </div>
+                    <button type="submit" class="btn-blue" data-ripple="">Đăng nhập</button>
+
+                    <div class="flex-between regis-forgot">
+                        <a href="#">Đăng ký</a>
+                        <a href="#">Quên mật khẩu</a>
+
+                    </div>
+                    <div class="or">
+                        <div>Hoặc</div>
+                    </div>
+                    <div class="login-other">
+                        <div class="row-other-6">
+                            <div class="col-other-6">
+                                <button class="block-cn-lg" data-ripple="">
+                                    <img src="img/fb-icon-lg-02.svg" alt="ảnh">
+                                    <span>Facebook</span>
+                                </button>
+                            </div>
+                            <div class="col-other-6">
+                                <button class="block-cn-lg gg-cn-lg" data-ripple="">
+                                    <img src="img/gg-icon-lg-03.svg" alt="ảnh">
+                                    <span>Google</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

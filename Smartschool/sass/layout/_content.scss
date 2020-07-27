@@ -2383,3 +2383,23 @@
     }
   }
 }
+//.tabcontent.active{
+//  display: block;
+//}
+
+//.tabcontent{
+//  display: none;
+//}
+
+
+//style form đăng nhập popup
+
+.regis-forgot{
+  a{
+    color: $c-bl;
+    display: block;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

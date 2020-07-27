@@ -3050,6 +3050,12 @@ select {
     .price-rate .rate-ob i {
       color: #FFC200; }
 
+.regis-forgot a {
+  color: #1476C6;
+  display: block; }
+  .regis-forgot a:hover {
+    text-decoration: underline; }
+
 #back-to-top {
   position: fixed;
   bottom: 25px;

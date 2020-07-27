@@ -282,14 +282,14 @@ $(document).ready(function () {
 
 
     // hover tab
-    (function ($) {
-        $(function () {
-            $(document).off('click.bs.tab.data-api', '[data-hover="tab"]');
-            $(document).on('mouseenter.bs.tab.data-api', '[data-toggle="tab"], [data-hover="tab"]', function () {
-                $(this).tab('show');
-            });
-        });
-    })(jQuery);
+    // (function ($) {
+    //     $(function () {
+    //         $(document).off('click.bs.tab.data-api', '[data-hover="tab"]');
+    //         $(document).on('mouseenter.bs.tab.data-api', '[data-toggle="tab"], [data-hover="tab"]', function () {
+    //             $(this).tab('show');
+    //         });
+    //     });
+    // })(jQuery);
 
     // Click event of the showPassword button
     $('.show-pass').on('click', function(){
@@ -372,10 +372,32 @@ $(document).ready(function () {
     })(jQuery);
 
     // changState();
+    // $('.tabcontent').css("display","none");
 
+
+
+    openClass();
+    // $('.tab-content.active').style.display = "block";
 
 
 });
+
+//js hover tab
+function openClass(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+
+        //
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
 
 //check state on tap
 
