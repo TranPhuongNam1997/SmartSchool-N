@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -201,9 +201,9 @@
                             </div>
                         </div>
                         <div class="list-question-nb">
-                            <a href="#question1" class="item-question-nb active">1</a>
-                            <a href="#question2" class="item-question-nb active">2</a>
-                            <a href="#question3" class="item-question-nb">3</a>
+                            <a href="#question1" class="item-question-nb" id="cau1">1</a>
+                            <a href="#question2" class="item-question-nb" id="cau2">2</a>
+                            <a href="#question3" class="item-question-nb" id="cau3">3</a>
                             <a href="#question4" class="item-question-nb">4</a>
                             <a href="#question5" class="item-question-nb">5</a>
                             <a href="#question6" class="item-question-nb">6</a>
@@ -251,32 +251,31 @@
                         </div>
                         <ul class="list-review">
                             <li class="item-review" id="question1">
-
                                 <div class="row">
                                     <div class="col-10">
                                         <div class="txt-question">1. Trong số 40 032 chữ số 0 ở hàng: .........</div>
                                         <div class="row">
                                             <div class="col-6">
                                                 <div class="item-anwer">
-                                                    <input type="checkbox" id="choose-da1" onclick="changeState()">
+                                                    <input class="check_1" type="checkbox" id="choose-da1" onclick="changeState(1)">
                                                     <label for="choose-da1">A. <span>Hàng trăm</span></label>
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="item-anwer">
-                                                    <input type="checkbox" id="choose-da2" onclick="changeState()">
+                                                    <input class="check_1" type="checkbox" id="choose-da2" onclick="changeState(1)">
                                                     <label for="choose-da2">B. <span>Hàng nghìn</span></label>
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="item-anwer">
-                                                    <input type="checkbox" id="choose-da3" onclick="changeState()">
+                                                    <input class="check_1" type="checkbox" id="choose-da3" onclick="changeState(1)">
                                                     <label for="choose-da3">C. <span>Hàng nghìn và hàng trăm</span></label>
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="item-anwer">
-                                                    <input type="checkbox" id="choose-da4" onclick="changeState()">
+                                                    <input class="check_1" type="checkbox" id="choose-da4" onclick="changeState(1)">
                                                     <label for="choose-da4">D. <span>Hàng trăm và hàng chục</span></label>
                                                 </div>
                                             </div>
@@ -291,25 +290,25 @@
                                         <div class="row">
                                             <div class="col-6">
                                                 <div class="item-anwer">
-                                                    <input type="checkbox">
+                                                    <input class="check_2" type="checkbox"  onclick="changeState(2)">
                                                     <label>A. <span>Hàng trăm</span></label>
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="item-anwer">
-                                                    <input type="checkbox">
+                                                    <input class="check_2" type="checkbox" onclick="changeState(2)">
                                                     <label>B. <span>Hàng nghìn</span></label>
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="item-anwer">
-                                                    <input type="checkbox">
+                                                    <input class="check_2" type="checkbox" onclick="changeState(2)">
                                                     <label>C. <span>Hàng nghìn và hàng trăm</span></label>
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="item-anwer">
-                                                    <input type="checkbox">
+                                                    <input class="check_2" type="checkbox" onclick="changeState(2)">
                                                     <label>D. <span>Hàng trăm và hàng chục</span></label>
                                                 </div>
                                             </div>
@@ -606,6 +605,16 @@
     </div>
     <a href="#top" id="go_top" class="btn-scrolltop"><i class="fa fa-angle-up"></i></a>
 </footer>
-
+<script>
+    // ví dụ id = 1;
+    function changeState(id) {
+        //alert("a");
+        if ($('.check_' + id).is(":checked")) {
+            $("#cau" + id).addClass("active")
+        } else {
+            $("#cau" + id).removeClass("active")
+        }
+    }
+</script>
 </body>
 </html>

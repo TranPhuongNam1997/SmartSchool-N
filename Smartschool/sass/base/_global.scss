@@ -107,3 +107,8 @@ select{
 .bg-white{
   background: #fff;
 }
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

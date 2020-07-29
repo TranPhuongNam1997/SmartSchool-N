@@ -351,6 +351,15 @@ $(document).ready(function () {
         }
     });
 
+    $('.wrap-help').hide();
+    $('#use-help').click(function () {
+        $('.wrap-help').show();
+    });
+    $('#close-help').click(function () {
+        $('.wrap-help').hide();
+    });
+
+
     //js bai hoc
 
     $('.block-learning').click(function () {
@@ -374,13 +383,27 @@ $(document).ready(function () {
     // changState();
     // $('.tabcontent').css("display","none");
 
-
+    // $(".item-help").click(function(){
+    //     $('.item-help').removeClass('acitve');
+    //     // $(this).addClass('active');
+    //
+    //     // if(!$(this).children('ul.nav-dropdown').is(":visible"))
+    //     //     {
+    //     //         $(this).children('ul.nav-dropdown').slideDown();
+    //     //         $(this).addClass('rotate-up');
+    //     //     }
+    //
+    // });
 
     openClass();
     // $('.tab-content.active').style.display = "block";
 
 
+
 });
+
+
+
 
 //js hover tab
 function openClass(evt, cityName) {

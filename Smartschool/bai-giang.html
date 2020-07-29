@@ -363,7 +363,6 @@
                             </div>
                             <div class="col-6-subject">
                                 <div class="flex-between">
-                                    <div class="hyper-play"><img class="w-100" src="img/play-subject.png" alt=""></div>
                                     <div class="hyper-right">
                                         <h3 class="name-sub">
                                             <a href="javascript:0;" data-toggle="modal" data-target="#modalpractive" data-backdrop="static" data-keyboard="false">Nội dung chi tiết 1 (07 câu hỏi)</a>
@@ -394,7 +393,6 @@
                             </div>
                             <div class="col-6-subject">
                                 <div class="flex-between">
-                                    <div class="hyper-play"><img class="w-100" src="img/play-subject.png" alt=""></div>
                                     <div class="hyper-right">
                                         <h3 class="name-sub">
                                             <a href="#">Nội dung chi tiết 1 (07 câu hỏi)</a>
@@ -425,7 +423,6 @@
                             </div>
                             <div class="col-6-subject">
                                 <div class="flex-between">
-                                    <div class="hyper-play"><img class="w-100" src="img/play-subject.png" alt=""></div>
                                     <div class="hyper-right">
                                         <h3 class="name-sub">
                                             <a href="#">Nội dung chi tiết 1 (07 câu hỏi)</a>
@@ -615,7 +612,7 @@
     <div class="modal-dialog">
         <div class="md-content modal-content">
             <div class="head-modal flex-between">
-                <h3>Lý thuyết - Nội dung chi tiết 1</h3>
+                <h3>Thực hành - Nội dung chi tiết 1</h3>
                 <button class="btn-close" data-dismiss="modal"><i class="fas fa-times"></i></button>
             </div>
             <div class="main-modal">
@@ -623,16 +620,107 @@
                 <!--  html video-->
 
                 <div class="anwer-block">
-                    <div class="flex-between">
-                        <h3>Câu 1: Trả lời câu hỏi</h3>
-                        .
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="item-review p-0">
+                                <h3 class="content-detail">Câu 1: Trả lời câu hỏi</h3>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="item-anwer">
+                                            <input class="check_1" type="checkbox" id="choose-da1" onclick="changeState(1)">
+                                            <label for="choose-da1">A. <span>Hàng trăm</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="item-anwer">
+                                            <input class="check_1" type="checkbox" id="choose-da2" onclick="changeState(1)">
+                                            <label for="choose-da2">B. <span>Hàng nghìn</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="item-anwer">
+                                            <input class="check_1" type="checkbox" id="choose-da3" onclick="changeState(1)">
+                                            <label for="choose-da3">C. <span>Hàng nghìn và hàng trăm</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="item-anwer">
+                                            <input class="check_1" type="checkbox" id="choose-da4" onclick="changeState(1)">
+                                            <label for="choose-da4">D. <span>Hàng trăm và hàng chục</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="zone-test text-right">
+                                <div class="state-answer">
+                                    <ul class="list-state-answer">
+                                        <li class="cr-answer"></li>
+                                        <li class="wr-answer"></li>
+                                        <li class="selecting"></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="check-answer flex-between">
+                        <div class="txt-noti-answer">Đáp án đúng là <span class="cl-green">A</span></div>
+<!--                        nếu đáp án là sai-->
+<!--                        <div class="txt-noti-answer">Đáp án đúng là <span class="cl-red">A</span></div>-->
+                        <button class="btn-blue-box" data-ripple>Kiểm tra đáp án</button>
+                        <!--bấm kiểm tra đáp án sẽ nhẩy sang nút này -->
+                        <!--<button class="btn-blue-box" data-ripple>Câu tiếp theo</button>-->
                     </div>
 
                 </div>
 
-                <div class="flex-between">
-                    <button class="btn-blue-box" data-ripple>Làm thực hành</button>
-                    <button class="btn-white-box" data-ripple>Xem video tiếp theo</button>
+                <div class="box-help">
+                    <h3 class="content-detail" id="use-help">Sử dụng trợ giúp</h3>
+                    <div class="wrap-help">
+                        <ul class="list-help nav nav-tabs" role="tablist">
+                            <li class="item-help nav-item">
+                                <a class="h-100 nav-link" data-toggle="tab" href="#menu1">
+                                    <div class="title-help">Xem video</div>
+                                    <div class="sub-help">Video lý thuyết về nội dung số 1</div>
+                                </a>
+
+                            </li>
+                            <li class="item-help nav-item">
+                                <a class="h-100 nav-link" data-toggle="tab" href="#menu2">
+                                    <div class="title-help">Sử dụng gợi ý</div>
+                                    <div class="sub-help">Tuy nhiên nếu bạn sử dụng gợi ý thì câu hỏi này sẽ không được tính điểm</div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="menu1" class="tab-pane"><br>
+                                <div class="row">
+                                    <div class="col-md-7 col-12">
+                                        <video src="img/daoham.mp4" autoplay="autoplay" controls class="w-100"></video>
+                                    </div>
+                                    <div class="col-md-5 col-12">
+                                        <h3 class="content-detail">Nội dung chi tiết 1</h3>
+                                        <div class="sub-help">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="menu2" class="tab-pane fade"><br>
+                                <h3>Menu 2</h3>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            </div>
+                        </div>
+
+                        <div class="help-bot text-right">
+                            <button class="btn-white-box" data-ripple id="close-help">Đóng</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

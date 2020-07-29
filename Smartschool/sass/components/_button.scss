@@ -490,7 +490,9 @@ button[data-ripple]{
   appearance: none;
   cursor: pointer;
   outline: none;
-  margin-top: -5px;
+  margin-top: -2px;
+  width: 18px;
+  float: left;
 }
 
 .item-anwer input[type="checkbox"]:checked:before {
@@ -533,4 +535,8 @@ button[data-ripple]{
 
 .item-anwer input[type="checkbox"] ~ label {
   cursor: pointer;
+  display: inline;
+  float: left;
+  width: calc(100% - 34px);
+  vertical-align: top;
 }
