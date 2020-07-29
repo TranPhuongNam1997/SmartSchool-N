@@ -2774,6 +2774,9 @@ select {
     /* Track */
     /* Handle */
     /* Handle on hover */ }
+    .modal-lesson .main-modal.mh-70 {
+      height: 70vh;
+      max-height: unset; }
     .modal-lesson .main-modal::-webkit-scrollbar {
       width: 6px; }
     .modal-lesson .main-modal::-webkit-scrollbar-track {

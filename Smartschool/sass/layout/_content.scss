@@ -2006,6 +2006,11 @@
     max-height: calc(100vh - 80px);
     overflow-y: auto;
     overflow-x: hidden;
+
+    &.mh-70{
+      height: 70vh;
+      max-height: unset;
+    }
     /* width */
     &::-webkit-scrollbar {
       width: 6px;
