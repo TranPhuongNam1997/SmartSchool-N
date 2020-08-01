@@ -354,6 +354,10 @@ $(document).ready(function () {
     $('.wrap-help').hide();
     $('#use-help').click(function () {
         $('.wrap-help').show();
+        // $('.main-modal').animate({scrollBottom: 0});
+        $(".main-modal").animate({scrollTop: 300}, "slow");
+        return false;
+
     });
     $('#close-help').click(function () {
         $('.wrap-help').hide();
