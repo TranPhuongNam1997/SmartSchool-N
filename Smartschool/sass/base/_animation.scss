@@ -532,3 +532,106 @@ $progress-indeterminate-duration: 3s;
   justify-content: center;
   cursor: pointer;
 }
+
+
+// hieu ung tung sao
+
+.HeartAnimation {
+  background-image: url('../img/bg-correct.png');
+  background-repeat: no-repeat;
+  background-size: 2900%;
+  background-position: left;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(1.7);
+  z-index: -1;
+  transition: 0.3s;
+  display: none;
+}
+.HeartAnimation1 {
+  background-image: url('../img/bg-correct.png');
+  background-repeat: no-repeat;
+  background-size: 2900%;
+  background-position: left;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(1.7);
+  z-index: -1;
+  transition: 0.3s;
+  display: none;
+}
+.HeartAnimation2 {
+  background-image: url('../img/bg-correct.png');
+  background-repeat: no-repeat;
+  background-size: 2900%;
+  background-position: left;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(1.7);
+  z-index: -1;
+  transition: 0.3s;
+  display: none;
+}
+
+.ifcorrect{
+  .HeartAnimation,.HeartAnimation1,.HeartAnimation2{
+    display: block;
+  }
+}
+
+
+.animate {
+  top: -40px;
+  animation: heart-burst .8s steps(28) forwards;
+  animation-delay: 0.5s;
+}
+.animate1{
+  transform: translate(-66px, -77px) scale(1.7);
+  animation: heart-burst1 .8s steps(28) forwards;
+  animation-delay: 0.4s;
+}
+.animate2{
+  transform: translate(15px, -77px) scale(1.7);
+  animation: heart-burst2 .8s steps(28) forwards;
+  animation-delay: 0.6s;
+}
+
+
+
+
+@keyframes heart-burst {
+  0% {
+    background-position: left
+  }
+  100% {
+    background-position: right
+  }
+}
+@keyframes heart-burst1 {
+  0% {
+    background-position: left
+  }
+  100% {
+    background-position: right
+  }
+}
+@keyframes heart-burst2 {
+  0% {
+    background-position: left
+  }
+  100% {
+    background-position: right
+  }
+}

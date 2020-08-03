@@ -681,7 +681,8 @@
                 <div class="box-help">
                     <div class="flex-between ">
                         <h3 class="content-detail mb-0" id="use-help">Sử dụng trợ giúp</h3>
-                        <button class="btn-blue-box" data-ripple>Kiểm tra đáp án</button>
+
+                        <button class="btn-blue-box ifcorrect" data-ripple>Kiểm tra đáp án <span class="HeartAnimation"></span><span class="HeartAnimation1"></span><span class="HeartAnimation2"></span></button>
                         <!--bấm kiểm tra đáp án sẽ nhẩy sang nút này -->
                         <!--<button class="btn-blue-box" data-ripple>Câu tiếp theo</button>-->
                     </div>
@@ -732,6 +733,24 @@
         </div>
     </div>
 </div>
+<script>
+    $(function() {
+        $(".ifcorrect").click(function() {
+            // $('.HeartAnimation').css('top','-55%');
+            $('.HeartAnimation').addClass("animate");
+            setTimeout(function(){ $('.HeartAnimation').removeClass("animate"); }, 2500);
 
+            $('.HeartAnimation1').addClass("animate1");
+            setTimeout(function(){ $('.HeartAnimation1').removeClass("animate1"); }, 2500);
+
+            $('.HeartAnimation2').addClass("animate2");
+            setTimeout(function(){ $('.HeartAnimation2').removeClass("animate2"); }, 2500);
+
+
+
+
+        });
+    });
+</script>
 </body>
 </html>
