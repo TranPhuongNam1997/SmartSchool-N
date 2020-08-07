@@ -618,7 +618,7 @@
             <div class="main-modal mh-70 flex-column">
 
                 <!--  html video-->
-
+                
                 <div class="anwer-block">
                     <div class="row">
                         <div class="col-8">
@@ -682,7 +682,12 @@
                     <div class="flex-between ">
                         <h3 class="content-detail mb-0" id="use-help">Sử dụng trợ giúp</h3>
 
-                        <button class="btn-blue-box ifcorrect" data-ripple>Kiểm tra đáp án <span class="HeartAnimation"></span><span class="HeartAnimation1"></span><span class="HeartAnimation2"></span></button>
+                        <button class="btn-blue-box ifcorrect" data-ripple>Kiểm tra đáp án 
+                            <span class="HeartAnimation"></span>
+                            <span class="HeartAnimation1"></span>
+                            <span class="HeartAnimation2"></span>
+                            <audio autoplay="autoplay" ><source src="img/correct-answer.m4a" type="audio/ogg"></audio>
+                        </button>
                         <!--bấm kiểm tra đáp án sẽ nhẩy sang nút này -->
                         <!--<button class="btn-blue-box" data-ripple>Câu tiếp theo</button>-->
                     </div>
@@ -745,9 +750,6 @@
 
             $('.HeartAnimation2').addClass("animate2");
             setTimeout(function(){ $('.HeartAnimation2').removeClass("animate2"); }, 2500);
-
-
-
 
         });
     });

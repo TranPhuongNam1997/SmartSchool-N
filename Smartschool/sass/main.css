@@ -3523,6 +3523,73 @@ select {
 .ifcorrect {
   position: relative; }
 
+.confirm-wrap {
+  position: fixed;
+  z-index: 9999999999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.28); }
+  .confirm-wrap .confirm-form {
+    width: 340px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 14px 17px 17px;
+    box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.27); }
+    .confirm-wrap .confirm-form .btn-close-confirm {
+      margin-bottom: 10px;
+      border: none;
+      background: none;
+      margin-right: -6px; }
+  .confirm-wrap img {
+    width: 36px; }
+
+.cf-text {
+  margin-left: 13px; }
+  .cf-text h3 {
+    color: #1476C6;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 9px;
+    text-transform: uppercase; }
+  .cf-text div {
+    color: #606060;
+    font-weight: 500; }
+
+.bt-cf-foot {
+  margin-top: 18px; }
+  .bt-cf-foot .row-cf {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -4px; }
+  .bt-cf-foot .col-cf {
+    padding: 0 4px;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative; }
+    .bt-cf-foot .col-cf button {
+      background: #1476C6;
+      border-radius: 4px;
+      height: 37px;
+      color: #fff;
+      font-size: 12px;
+      border: 1px solid #1476C6;
+      width: 100%; }
+      .bt-cf-foot .col-cf button.btn-accept-cf:hover {
+        opacity: 0.8; }
+      .bt-cf-foot .col-cf button.btn-cancel-cf {
+        border: 1px solid #1476C6;
+        background: #fff;
+        color: #1476C6; }
+
 #back-to-top {
   position: fixed;
   bottom: 25px;
@@ -3556,7 +3623,7 @@ footer {
     display: block;
     line-height: 20px; }
     .logo-foot a img {
-      height: 27px; }
+      height: 63px; }
 
 .slogan-compnany {
   font-family: 'Roboto';
@@ -3588,35 +3655,18 @@ footer {
     animation: 0.5s xoay forwards; }
 
 .foot-right {
-  background: rgba(255, 255, 255, 0.19);
-  border-radius: 70px;
-  padding: 17px 48px;
-  margin-top: 58px; }
-  .foot-right .txt-register {
-    font-family: 'Roboto';
-    font-size: 18px;
-    color: #FFDA00;
-    font-weight: 700; }
-  .foot-right .email-regis {
-    border-radius: 30px;
-    background: #0065C8;
-    border: none;
-    width: 253px;
-    height: 45px;
-    outline: none;
-    padding: 0 36px;
+  margin-top: 101px; }
+
+.title-footer {
+  color: #FFDA00;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 20px; }
+
+.list-foot li {
+  margin-bottom: 16px; }
+  .list-foot li a {
     color: #fff; }
-    .foot-right .email-regis::-webkit-input-placeholder {
-      /* Edge */
-      color: #4FAEFC;
-      font-style: italic; }
-    .foot-right .email-regis:-ms-input-placeholder {
-      /* Internet Explorer 10-11 */
-      color: #4FAEFC;
-      font-style: italic; }
-    .foot-right .email-regis::placeholder {
-      color: #4FAEFC;
-      font-style: italic; }
 
 .coppy-right {
   margin-top: 57px;
