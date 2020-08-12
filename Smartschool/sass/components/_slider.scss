@@ -99,7 +99,7 @@
 }
 
 
-.slick-bs-course{
+.slick-bs-course,.sc-course-watched{
   .slick-prev {
     left: -42px;
     &:before{
@@ -163,6 +163,10 @@
   }
 
 }
+
+
+
+
 .slick-featured-lectures{
   .slick-prev {
     left: -42px;

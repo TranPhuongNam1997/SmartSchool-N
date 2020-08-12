@@ -283,6 +283,7 @@ button[data-ripple]{
     overflow: hidden;
     text-overflow: ellipsis;
     color: #fff;
+    max-width: calc(100% - 24px);
   }
 
   input {
@@ -307,7 +308,7 @@ button[data-ripple]{
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 85%;
+        max-width: calc(100% - 25px);
       }
 
       > ul {
@@ -323,7 +324,7 @@ button[data-ripple]{
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            max-width: 85%;
+            max-width: calc(100% - 25px);
           }
 
           > ul {
@@ -341,7 +342,7 @@ button[data-ripple]{
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                max-width: 85%;
+                max-width: calc(100% - 25px);
               }
 
               > ul {

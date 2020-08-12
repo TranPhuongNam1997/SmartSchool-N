@@ -51,6 +51,9 @@
       @media (max-width: 1300px) {
         //padding: 19px 19px;
       }
+      @media (max-width: 1060px) {
+        padding: 19px 30px;
+      }
       @include tablet{
         padding: 15px 19px;
         i{

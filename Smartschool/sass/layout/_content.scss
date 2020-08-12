@@ -240,73 +240,183 @@
 }
 
 //style sc-featured-lectures----------------------------------------
-.sc-featured-lectures{
-  padding-bottom: 73px;
-  .title-pg{
-    margin-bottom: 48px;
-    @include tablet{
-      margin-bottom: 30px;
-    }
-    @include mobile-horizontal{
-      margin-bottom: 20px;
-    }
-  }
-  @include tablet{
-    padding-bottom: 30px;
-  }
-  @include mobile-horizontal{
-    padding-bottom: 12px;
-  }
-}
-.sub-lesson{
-  margin-top: 64px;
+//.sc-featured-lectures{
+//  padding-bottom: 73px;
+//  .title-pg{
+//    margin-bottom: 48px;
+//    @include tablet{
+//      margin-bottom: 30px;
+//    }
+//    @include mobile-horizontal{
+//      margin-bottom: 20px;
+//    }
+//  }
+//  @include tablet{
+//    padding-bottom: 30px;
+//  }
+//  @include mobile-horizontal{
+//    padding-bottom: 12px;
+//  }
+//}
+//.sub-lesson{
+//  margin-top: 64px;
+//
+//  .text-rate{
+//    margin-bottom: 27px;
+//  }
+//  .title-sub{
+//    color: $c-bll;
+//    font-size: 27px;
+//    font-weight: 500;
+//    text-transform: uppercase;
+//
+//  }
+//  .rate-lesson{
+//    i{
+//      color: $c-yl;
+//    }
+//  }
+//  .sub-item-slide{
+//    color: #BABABA;
+//    font-weight: 500;
+//  }
+//  @include tablet{
+//    margin-top: 25px;
+//    .text-rate{
+//      margin-bottom: 20px;
+//    }
+//    .title-sub{
+//      font-size: 22px;
+//
+//    }
+//  }
+//  @include mobile-horizontal{
+//    margin-top: 20px;
+//    .title-sub{
+//      font-size: 18px;
+//      line-height: 23px;
+//    }
+//  }
+//  @include mobile{
+//    .flex-between{
+//      flex-direction: column;
+//      align-items: flex-start;
+//    }
+//    .title-sub{
+//      margin-bottom: 10px;
+//    }
+//  }
+//}
 
-  .text-rate{
-    margin-bottom: 27px;
-  }
-  .title-sub{
-    color: $c-bll;
-    font-size: 27px;
-    font-weight: 500;
-    text-transform: uppercase;
-
-  }
   .rate-lesson{
     i{
       color: $c-yl;
     }
   }
+.sc-featured-lectures{
+  .title-pg{
+    margin-bottom: 45px;
+  }
+}
+.list-featured{
+  max-height: 447px;
+  overflow-y: auto;
+  padding-right: 41px;
+  /* width */
+  &::-webkit-scrollbar {
+    width: 3px;
+
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #0065C8;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #0065C8;
+  }
+  li{
+    margin-bottom: 13px;
+    a{
+      display: block;
+      position: relative;
+      &:before{
+        @include resize-before(59%);
+      }
+      img{
+        @include resize-img;
+        width: 100%;
+      }
+      .box-featured{
+        display: flex;
+        align-items: flex-end;
+        padding: 20px 19px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        span{
+          width: 100%;
+          span{
+            color: #fff;
+            &:first-child{
+              display: block;
+              font-weight: 700;
+              font-size: 22px;
+              margin-bottom: 10px;
+              line-height: 28px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            &:last-child{
+              display: block;
+              font-weight: 500;
+              font-size: 16px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.rate{
+  margin-top: 15px;
+  margin-bottom: 38px;
+  .rate-lesson{
+
+  }
+}
+  .title-sub{
+    color: $c-bll;
+    font-size: 27px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 32px;
+    margin-bottom: 21px;
+
+  }
   .sub-item-slide{
     color: #BABABA;
     font-weight: 500;
   }
-  @include tablet{
-    margin-top: 25px;
-    .text-rate{
-      margin-bottom: 20px;
-    }
-    .title-sub{
-      font-size: 22px;
-
-    }
-  }
-  @include mobile-horizontal{
-    margin-top: 20px;
-    .title-sub{
-      font-size: 18px;
-      line-height: 23px;
-    }
-  }
-  @include mobile{
-    .flex-between{
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .title-sub{
-      margin-bottom: 10px;
-    }
-  }
-}
 
 //style sc-news-----------------------------------------------------
 
@@ -482,7 +592,7 @@
     overflow: auto;
     /* width */
     &::-webkit-scrollbar {
-      width: 5px;
+      width: 3px;
     }
 
     /* Track */
@@ -529,6 +639,34 @@
         padding-top: 16px;
       }
     }
+  }
+}
+
+//style sc-course-watched----------------------------
+.sc-course-watched{
+  padding: 50px 0;
+  .title-sub{
+    margin-bottom: 30px;
+  }
+  .img-lesson{
+    img{
+      transition: all 0.3s;
+    }
+  }
+
+  .element-lesson:hover{
+    .img-lesson{
+      transform: translateY(0) ;
+      transition: all 0.3s;
+      &:after{
+        display: none;
+      }
+      img{
+        transform: scale(1.1);
+        transition: all 0.3s;
+      }
+    }
+
   }
 }
 
@@ -633,7 +771,20 @@
   padding-top: 150px;
 }
 .container-login{
-  margin-top: 145px;
+  //margin-top: 145px;
+}
+.main-login{
+  padding-top: 150px;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  @media (max-width: 1366px) {
+    padding-top: 195px;
+  }
+
+  @include tablet{
+    padding-top: 150px;
+  }
 }
 .logo-login{
   margin-bottom: 44px;
@@ -784,7 +935,7 @@
 
   }
 }
-.show-pass,.show-pass2{
+.show-pass,.show-pass2,.show-pass3,.show-pass4,.show-pass5{
   background: none;
   padding: 5px;
   position: absolute;
@@ -1743,6 +1894,10 @@
     //margin-left: 17px;
     //color: #828282;
     font-size: 14px;
+  }
+  .state-view{
+    margin-left: 17px;
+    color: #828282;
   }
 }
 .state-free{
@@ -2733,6 +2888,7 @@
     @include resize-before(44.3%);
     img{
       @include resize-img;
+      object-fit: cover;
     }
   }
   h3{
@@ -2830,6 +2986,7 @@
 
   img{
     @include resize-img;
+    object-fit: cover;
   }
 }
 .sidenews-right{

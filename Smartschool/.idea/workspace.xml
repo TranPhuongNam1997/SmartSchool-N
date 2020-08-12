@@ -22,9 +22,17 @@
     <list default="true" id="30c15ec5-f1de-4da1-b9d8-b448bfeabd1b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bai-giang.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai-giang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-update0708.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-update0708.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/base/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/components/_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_slider.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/layout/_content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_content.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/layout/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layout/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_grid.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layout/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_navigation.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css.map" afterDir="false" />
     </list>
@@ -138,7 +146,15 @@
       <workItem from="1596510266585" duration="5344000" />
       <workItem from="1596521243926" duration="6628000" />
       <workItem from="1596538299515" duration="935000" />
-      <workItem from="1596765541546" duration="233000" />
+      <workItem from="1596765541546" duration="3143000" />
+      <workItem from="1596788704888" duration="9347000" />
+      <workItem from="1597026685889" duration="6555000" />
+      <workItem from="1597039526095" duration="425000" />
+      <workItem from="1597040481105" duration="1234000" />
+      <workItem from="1597047747523" duration="783000" />
+      <workItem from="1597115950604" duration="2766000" />
+      <workItem from="1597127449670" duration="3473000" />
+      <workItem from="1597196621081" duration="7884000" />
     </task>
     <servers />
   </component>

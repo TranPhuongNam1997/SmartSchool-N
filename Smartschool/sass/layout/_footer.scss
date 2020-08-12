@@ -181,7 +181,7 @@ a.btn-scrolltop {
   border-radius: 3px;
   display: none;
   i{
-    line-height: 40px;
+    line-height: 45px;
   }
 }
 
@@ -321,6 +321,7 @@ a.btn-scrolltop {
     line-height: 45px;
     cursor: pointer;
     transition: all 0.3s;
+    position: relative;
     &:hover{
       background: #1a7fe2;
       transition: all 0.3s;
@@ -328,6 +329,10 @@ a.btn-scrolltop {
     img{
       width: 16px;
       height: 25px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
     }
   }
   .learning-lesson{
@@ -356,7 +361,7 @@ a.btn-scrolltop {
       content: '';
       border-left: 6px solid transparent;
       border-right: 6px solid transparent;
-      border-top: 6px solid #0065C8;
+      border-top: 6px solid #1a7fe2;
       position: absolute;
       right: 17px;
       top: 99%;
