@@ -778,6 +778,7 @@
   display: flex;
   align-items: center;
   min-height: 100vh;
+
   @media (max-width: 1366px) {
     padding-top: 195px;
   }
@@ -789,7 +790,11 @@
 .logo-login{
   margin-bottom: 44px;
   img{
-    height: 27px;
+    height: 59px;
+    @include mobile{
+      display: block;
+      margin: auto;
+    }
   }
   @include mobile-horizontal{
     margin-bottom: 20px;
@@ -1101,9 +1106,9 @@
   //padding: 29px;
   filter: blur(0);
 
-  @include mobile{
-    padding: 15px;
-  }
+  //@include mobile{
+  //  padding: 15px;
+  //}
 }
 
 .md-otp{
@@ -1116,7 +1121,7 @@
       color: #fff;
       margin-bottom: 0;
       @include mobile{
-        font-size: 18px;
+        font-size: 16px;
       }
     }
     .btn-close{
@@ -1154,6 +1159,9 @@
         &::placeholder {
           font-style: italic;
           color: #697B87;
+        }
+        @include mobile{
+          height: 45px;
         }
       }
       .send-otp{
@@ -1209,8 +1217,11 @@
 //style registation------------------------------------------------
 
 .bg-registation{
-  padding-top: 157px;
+  padding-top: 150px;
   background: url("../img/banner-regis.png") no-repeat center top;
+  @media (max-width: 1600px) {
+    padding-top: 56px;
+  }
   @include tablet{
     padding-top: 70px;
   }
@@ -1235,6 +1246,9 @@
 .shadow-regis{
   box-shadow: 1px 18px 44px #a09d9d;
   padding: 82px 104px 115px;
+  @media (max-width: 1600px) {
+    padding: 81px 104px 53px;
+  }
   @include tablet{
     padding: 40px;
   }
@@ -1250,6 +1264,9 @@
   background: #F2F5F9;
   position: relative;
   overflow: hidden;
+  @include mobile{
+    padding-bottom: 0;
+  }
 }
 .side-bar{
   background: url("../img/bg-col-left.png") no-repeat bottom center , url("../img/bg-col-left-small.png") repeat-x top center;
@@ -2865,6 +2882,12 @@
 //style tin tuc va su kien
 .mt-news{
   margin-top: 55px;
+  @include tablet{
+    margin-top: 0;
+  }
+  .block-news{
+    padding: 20px 15px;
+  }
 }
 .title-newsevent{
   font-size: 30px;
@@ -2872,6 +2895,11 @@
   line-height: 36px;
   margin-bottom: 37px;
   color: $c-bl;
+  @include tablet{
+    font-size: 22px;
+    line-height: unset;
+    margin-bottom: 15px;
+  }
 }
 .block-news{
   padding: 39px 30px;
@@ -2889,6 +2917,9 @@
     img{
       @include resize-img;
       object-fit: cover;
+    }
+    @include mobile-horizontal{
+      margin-bottom: 15px;
     }
   }
   h3{
@@ -2908,6 +2939,14 @@
         color: $c-yl;
       }
     }
+    @include mobile-horizontal{
+      margin-bottom: 15px;
+    }
+  }
+  @include mobile-horizontal{
+    margin-bottom: 18px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
   }
 
 }
@@ -2928,6 +2967,9 @@
 }
 .img-sidenews.size-custom{
   width: 33.3333%;
+  @include mobile{
+    width: 100%;
+  }
 }
 .img-sidenews.size-custom:before {
   content: '';
@@ -2944,12 +2986,19 @@
     -webkit-line-clamp: 2;
     display: -webkit-box;
   }
+  @include mobile{
+    width: 100%;
+  }
 }
 .list-related{
   li{
     padding: 22px 0 14px;
     display: block;
     border-bottom: 1px solid #DEDEDE;
+    @include tablet{
+      padding: 17px 0 10px;
+    }
+
     a{
       margin-bottom: 10px;
       display: block;
@@ -2961,6 +3010,10 @@
       &:hover{
         text-decoration: underline;
       }
+      @include mobile{
+        width: 100%;
+        margin-right: 0;
+      }
     }
     &:last-child{
       border-bottom: none;
@@ -2969,6 +3022,9 @@
 }
 .title-related{
   margin-bottom: 15px;
+  @include tablet{
+    margin-bottom: 0;
+  }
 }
 
 .block-side-news{
@@ -2988,6 +3044,11 @@
     @include resize-img;
     object-fit: cover;
   }
+  @include mobile{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
 }
 .sidenews-right{
   width: calc(100% - 99px);
@@ -3011,6 +3072,11 @@
 .side-news{
   li{
     margin-bottom: 25px;
+    @include mobile{
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+    }
   }
 }
 .read-more-right{
