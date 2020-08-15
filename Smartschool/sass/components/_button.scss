@@ -48,57 +48,57 @@ input[type="checkbox"]~label{
   cursor: pointer;
 }
 //radio
-input[type="radio"] {
-  position: relative;
-  border: none;
-  margin-bottom: -4px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  outline: none;
-  padding: 7px 5px 8px 15px;
-  //background: #f7f7f7;
-  float: left;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
-  -webkit-box-shadow: none;
-}
-input[type="radio"]:checked:before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 22px;
-  display: table;
-  width: 5px;
-  height: 10px;
-  border: 2px solid #fff;
-  border-top-width: 0px;
-  border-left-width: 0;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-input[type="radio"]:after {
-  content: "";
-  display: block;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #bbb;
-  -webkit-transition: 240ms;
-  transition: 240ms;
-  border-radius: 50%;
-  background: #fff;
-}
-input[type="radio"]:checked:after{
-  background-color: #F37021;
-  border-color: #F37021;
-}
-input[type="radio"]:checked{
-  background: #f7f7f7;
-}
-input[type="radio"]:checked ~ label{
-  background: #f7f7f7;
-}
+//input[type="radio"] {
+//  position: relative;
+//  border: none;
+//  margin-bottom: -4px;
+//  -webkit-appearance: none;
+//  -moz-appearance: none;
+//  appearance: none;
+//  cursor: pointer;
+//  outline: none;
+//  padding: 7px 5px 8px 15px;
+//  //background: #f7f7f7;
+//  float: left;
+//  border-top-left-radius: 2px;
+//  border-bottom-left-radius: 2px;
+//  -webkit-box-shadow: none;
+//}
+//input[type="radio"]:checked:before {
+//  content: "";
+//  position: absolute;
+//  top: 10px;
+//  left: 22px;
+//  display: table;
+//  width: 5px;
+//  height: 10px;
+//  border: 2px solid #fff;
+//  border-top-width: 0px;
+//  border-left-width: 0;
+//  -webkit-transform: rotate(45deg);
+//  transform: rotate(45deg);
+//}
+//input[type="radio"]:after {
+//  content: "";
+//  display: block;
+//  width: 18px;
+//  height: 18px;
+//  border: 1px solid #bbb;
+//  -webkit-transition: 240ms;
+//  transition: 240ms;
+//  border-radius: 50%;
+//  background: #fff;
+//}
+//input[type="radio"]:checked:after{
+//  background-color: #F37021;
+//  border-color: #F37021;
+//}
+//input[type="radio"]:checked{
+//  background: #f7f7f7;
+//}
+//input[type="radio"]:checked ~ label{
+//  background: #f7f7f7;
+//}
 
 
 button[data-ripple]{
@@ -273,6 +273,7 @@ button[data-ripple]{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    cursor: pointer;
   }
 
   > label {
@@ -478,11 +479,11 @@ button[data-ripple]{
 
 
 
-.item-anwer input[type="checkbox"][disabled="disabled"] {
+.item-anwer input[type="checkbox"][disabled="disabled"],input[type="radio"][disabled="disabled"] {
   background: transparent;
 }
 
-.item-anwer input[type="checkbox"] {
+.item-anwer input[type="checkbox"],input[type="radio"] {
   position: relative;
   border: none;
   margin-bottom: -4px;
@@ -496,7 +497,7 @@ button[data-ripple]{
   float: left;
 }
 
-.item-anwer input[type="checkbox"]:checked:before {
+.item-anwer input[type="checkbox"]:checked:before,input[type="radio"]:checked:before {
   content: "";
   position: absolute;
   top: 4px;
@@ -511,7 +512,7 @@ button[data-ripple]{
   transform: rotate(45deg);
 }
 
-.item-anwer input[type="checkbox"]:after {
+.item-anwer input[type="checkbox"]:after,input[type="radio"]:after {
   content: "";
   display: block;
   width: 18px;
@@ -524,20 +525,28 @@ button[data-ripple]{
 
 }
 
-.item-anwer input[type="checkbox"]:checked:after {
+.item-anwer input[type="checkbox"]:checked:after,input[type="radio"]:checked:after {
   background-color: $c-bl;
   border-color: $c-bl;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.52);
 }
-.item-anwer input[type="checkbox"]:checked ~ label{
+.item-anwer input[type="checkbox"]:checked ~ label,input[type="radio"]:checked ~ label{
   color: $c-bl;
   font-weight: 700;
 }
 
-.item-anwer input[type="checkbox"] ~ label {
+.item-anwer input[type="checkbox"] ~ label,input[type="radio"] ~ label {
   cursor: pointer;
   display: inline;
   float: left;
   width: calc(100% - 34px);
   vertical-align: top;
+}
+
+.btn-blue-box[disabled]{
+  background: #5aa5e2;
+}
+
+input[type="checkbox"]:focus:after {
+  border: 2px solid #000;
 }

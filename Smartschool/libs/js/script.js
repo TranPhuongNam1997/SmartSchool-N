@@ -154,7 +154,7 @@ $(document).ready(function () {
     //js select
 
     $('.field-select').click(function () {
-       $(this).toggleClass('active');
+        $(this).toggleClass('active');
     });
     $('.field-select').focusout(function () {
         $(this).removeClass('active');
@@ -360,6 +360,7 @@ $(document).ready(function () {
 
     });
     $('#close-help').click(function () {
+
         $('.wrap-help').hide();
     });
 

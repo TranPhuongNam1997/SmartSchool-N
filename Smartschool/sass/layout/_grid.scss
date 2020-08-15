@@ -234,6 +234,13 @@
   flex: 0 0 17%;
   max-width: 17%;
   position: relative;
+
+
+  @include tablet{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 .col-main-83{
   padding: 0 8px;
@@ -241,6 +248,11 @@
   flex: 0 0 83%;
   max-width: 83%;
   position: relative;
+  @include tablet{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 .col-featured-67{
   padding: 0 15px;

@@ -19,12 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30c15ec5-f1de-4da1-b9d8-b448bfeabd1b" name="Default Changelist" comment="">
+    <list default="true" id="30c15ec5-f1de-4da1-b9d8-b448bfeabd1b" name="Default Changelist" comment="/">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-update0708.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-update0708.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/base/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_button.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/layout/_content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layout/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layout/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_grid.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xac-thuc-tai-khoan.html" beforeDir="false" afterPath="$PROJECT_DIR$/xac-thuc-tai-khoan.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +150,12 @@
       <workItem from="1597047747523" duration="783000" />
       <workItem from="1597115950604" duration="2766000" />
       <workItem from="1597127449670" duration="3473000" />
-      <workItem from="1597196621081" duration="13656000" />
+      <workItem from="1597196621081" duration="14096000" />
+      <workItem from="1597282200002" duration="6676000" />
+      <workItem from="1597298760072" duration="10830000" />
+      <workItem from="1597370294576" duration="6374000" />
+      <workItem from="1597385572543" duration="8930000" />
+      <workItem from="1597456516886" duration="3631000" />
     </task>
     <servers />
   </component>

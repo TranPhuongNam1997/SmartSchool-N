@@ -9,7 +9,7 @@ li{
   list-style: none;
 }
 a{
-  color: #232323;
+  color: #606060;
 }
 a,a:hover,a:focus{
   text-decoration: none;
@@ -26,12 +26,12 @@ img{
 label{
   margin-bottom: 0;
 }
-button{
-  outline: none;
-  &:focus{
-    outline: none;
-  }
-}
+//button{
+//  outline: none;
+//  &:focus{
+//    outline: none;
+//  }
+//}
 form{
   margin-bottom: 0;
 }
