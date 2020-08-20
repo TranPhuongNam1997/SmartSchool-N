@@ -27,6 +27,9 @@ video {
   max-width: 100%;
   width: 100%; }
 
+button:active {
+  outline: none !important; }
+
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto-Regular.eot");
@@ -564,20 +567,20 @@ video {
 body {
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: #F2F5F9;
   color: #606060;
   font-size: 14px;
   line-height: 16px;
-  font-family: 'Helvetica Neue'; }
+  font-family: 'Helvetica Neue';
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 437px; }
 
 .body-wrap {
   position: relative;
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
-  height: 100%; }
-
-html, body {
   height: 100%; }
 
 .push {
@@ -656,6 +659,9 @@ select {
 
 .mh-100vh {
   min-height: 100vh; }
+
+.mh-200 {
+  min-height: 200px; }
 
 .row-ss {
   margin: 0 -6px;
@@ -814,8 +820,7 @@ select {
 .container-regis {
   max-width: 1230px;
   padding: 0 15px;
-  margin: 0 auto;
-  background: #fff; }
+  margin: 0 auto; }
   @media (max-width: 991px) {
     .container-regis {
       max-width: 1105px;
@@ -1019,15 +1024,19 @@ select {
   align-items: center;
   justify-content: flex-end;
   transition: all 0.3s; }
-  .head-wrap.navShadow {
-    padding: 15px 0;
-    transition: all 0.3s; }
-    .head-wrap.navShadow .block-logo .logo {
-      transform: scale(0.7);
-      transition: all 0.3s; }
   @media (max-width: 991px) {
     .head-wrap {
       padding: 17px 0; } }
+
+#wraper.navShadow .head-wrap {
+  padding: 15px 0;
+  transition: all 0.3s; }
+  #wraper.navShadow .head-wrap .block-logo .logo {
+    transform: scale(0.7);
+    transition: all 0.3s; }
+#wraper.navShadow .side-bar.reviewbar-left {
+  top: 106px;
+  transition: all 0.3s; }
 
 .block-logo {
   display: flex;
@@ -1908,11 +1917,15 @@ select {
 .pd-150 {
   padding-top: 150px; }
 
+.container-login-custom .field-login {
+  margin-bottom: 22px; }
+
 .main-login {
   padding-top: 150px;
   display: flex;
   align-items: center;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background: #fff; }
   @media (max-width: 1366px) {
     .main-login {
       padding-top: 195px; } }
@@ -2009,19 +2022,6 @@ select {
       background-repeat: no-repeat;
       background-position: top 33px right 16px;
       background-size: 8px 5px; }
-
-.btn-blue {
-  height: 57px;
-  background: #1476C6;
-  color: #fff;
-  font-weight: 500;
-  border: none;
-  width: 100%;
-  border-radius: 3px;
-  margin-bottom: 15px; }
-  @media only screen and (max-width: 576px) {
-    .btn-blue {
-      height: 45px; } }
 
 .remember-pass label {
   color: #1476C6;
@@ -2233,6 +2233,11 @@ select {
   font-weight: 500;
   color: #606060; }
 
+.forgot-pass-md #txtForgotPass {
+  padding: 0 125px 0 23px; }
+.forgot-pass-md #txtOTP_Forgot[disabled] {
+  background: #eff1f2; }
+
 .foot-confirmlogin .cf-otp-left a {
   color: #1476C6;
   display: inline-block;
@@ -2266,7 +2271,8 @@ select {
 
 .shadow-regis {
   box-shadow: 1px 18px 44px #a09d9d;
-  padding: 82px 104px 83px; }
+  padding: 82px 104px 83px;
+  background: #fff; }
   @media (max-width: 1600px) {
     .shadow-regis {
       padding: 81px 104px 53px; } }
@@ -2279,7 +2285,6 @@ select {
 
 .main-gd {
   padding-bottom: 43px;
-  background: #F2F5F9;
   position: relative;
   overflow: hidden; }
   @media only screen and (max-width: 576px) {
@@ -2287,7 +2292,7 @@ select {
       padding-bottom: 0; } }
 
 .side-bar {
-  background: url("../img/bg-col-left.png") no-repeat bottom center, url("../img/bg-col-left-small.png") repeat-x top center;
+  background: url("../img/bg-col-left.png") no-repeat bottom center;
   padding: 81px 0 128px;
   min-height: 747px;
   background-size: 100%;
@@ -2324,7 +2329,8 @@ select {
     font-size: 18px;
     margin-bottom: 8px;
     text-transform: uppercase;
-    color: #fff; }
+    color: #fff;
+    word-break: break-word; }
   .block-user .change-pass {
     color: #93D7F9;
     font-size: 12px;
@@ -2696,12 +2702,18 @@ select {
 
 .sub-course {
   margin-bottom: 30px; }
-  .sub-course p, .sub-course li, .sub-course b {
+  .sub-course li {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
     font-style: normal; }
-  .sub-course b i {
-    font-style: normal; }
+  .sub-course p {
+    display: block;
+    margin-bottom: 10px; }
+  .sub-course b {
+    margin-bottom: 6px;
+    display: block; }
+    .sub-course b i {
+      font-style: normal; }
 
 .target-course h3 {
   font-weight: 700;
@@ -3342,33 +3354,49 @@ select {
     margin-bottom: 14px; }
 
 .side-bar.reviewbar-left {
-  padding-top: 43px; }
+  padding-top: 43px;
+  width: 190px;
+  position: fixed;
+  top: 150px;
+  left: calc((100% - 1200px)/2);
+  transition: all 0.3s; }
 
 .list-question-nb {
-  padding: 0 51px;
-  column-count: 3; }
+  padding: 0 51px; }
+  .list-question-nb:after {
+    content: '';
+    clear: both;
+    display: table; }
   .list-question-nb .item-question-nb {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background: #fff;
     text-align: center;
-    color: #1476C6;
-    line-height: 18px;
-    margin-bottom: 9px;
-    cursor: pointer;
-    display: block;
-    font-size: 12px;
-    font-weight: 700; }
-    .list-question-nb .item-question-nb.active {
+    width: 33.3333%;
+    float: left; }
+    .list-question-nb .item-question-nb:nth-child(3n+3) span {
+      margin-left: auto; }
+    .list-question-nb .item-question-nb:nth-child(3n+2) span {
+      margin-left: auto;
+      margin-right: auto; }
+    .list-question-nb .item-question-nb span {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #fff;
+      color: #1476C6;
+      line-height: 18px;
+      margin-bottom: 9px;
+      cursor: pointer;
+      display: block;
+      font-size: 12px;
+      font-weight: 700; }
+    .list-question-nb .item-question-nb.active span {
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.28);
       background: #1476C6;
       color: #fff; }
-    .list-question-nb .item-question-nb.exactly {
+    .list-question-nb .item-question-nb.exactly span {
       background: #00990E;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.28);
       color: #fff; }
-    .list-question-nb .item-question-nb.wrong {
+    .list-question-nb .item-question-nb.wrong span {
       background: #BC171F;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.28);
       color: #fff; }
@@ -3927,7 +3955,8 @@ select {
 
 .not-found {
   text-align: center;
-  padding: 15px 0; }
+  padding: 15px 0;
+  width: 100%; }
   .not-found h4 {
     margin-bottom: 0;
     font-size: 14px;
@@ -3959,7 +3988,11 @@ select {
 
 footer {
   background: #0065C8 url("../img/bg-foot.png");
-  padding: 66px 0 33px; }
+  padding: 66px 0 33px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0; }
 
 .logo-foot {
   margin-bottom: 34px; }
@@ -4069,7 +4102,10 @@ a.btn-scrolltop {
   font-size: 22px;
   color: #1476C6;
   text-transform: uppercase;
-  margin-bottom: 44px; }
+  margin-bottom: 44px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .list-info {
   margin-bottom: 44px; }
@@ -4122,7 +4158,13 @@ a.btn-scrolltop {
     margin-left: 15px;
     color: #1476C6; }
   .name-user-hv .name-main-user {
-    cursor: pointer; }
+    cursor: pointer;
+    max-width: 260px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom; }
   .name-user-hv:hover.name-main-user {
     text-decoration: underline; }
   .name-user-hv .block-ultility {
@@ -4269,24 +4311,34 @@ button[data-ripple] {
   border: none;
   transition: all 0.3s; }
 
+.btn-blue {
+  height: 57px;
+  background: #1476C6;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 15px; }
+  @media only screen and (max-width: 576px) {
+    .btn-blue {
+      height: 45px; } }
+  .btn-blue[disabled] {
+    background: #5aa5e2; }
+
 .nestedCheckboxes {
   margin-bottom: 17px; }
   .nestedCheckboxes label {
-    vertical-align: baseline;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; }
+    vertical-align: baseline; }
   .nestedCheckboxes > label {
     font-weight: 700;
     text-transform: uppercase;
     margin-left: 5px;
     color: #1476C6;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     display: block; }
   .nestedCheckboxes input {
-    vertical-align: middle; }
+    vertical-align: middle;
+    display: none; }
   .nestedCheckboxes > ul > li {
     padding: 13px 25px;
     background: url("../img/bg-gr-02.png") top left 10px repeat-y, url("../img/bg-gr-01.png") top 21px left 10px no-repeat; }
@@ -4299,9 +4351,6 @@ button[data-ripple] {
       color: #3d3d3d;
       font-weight: 700;
       margin-left: 5px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
       display: block; }
     .nestedCheckboxes > ul > li > ul > li {
       padding: 13px 25px 0;
@@ -4585,9 +4634,6 @@ button[data-ripple] {
 
 .btn-blue-box[disabled] {
   background: #5aa5e2; }
-
-input[type="checkbox"]:focus:after {
-  border: 2px solid #000; }
 
 .slick-slide img {
   width: 100%; }

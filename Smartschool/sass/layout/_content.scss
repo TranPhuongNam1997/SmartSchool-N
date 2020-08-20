@@ -791,11 +791,17 @@
 .container-login{
   //margin-top: 145px;
 }
+.container-login-custom{
+  .field-login{
+    margin-bottom: 22px;
+  }
+}
 .main-login{
   padding-top: 150px;
   display: flex;
   align-items: center;
   min-height: 100vh;
+  background: #fff;
 
   @media (max-width: 1366px) {
     padding-top: 195px;
@@ -914,19 +920,7 @@
     }
   }
 }
-.btn-blue{
-  height: 57px;
-  background: $c-bl;
-  color: #fff;
-  font-weight: 500;
-  border: none;
-  width: 100%;
-  border-radius: 3px;
-  margin-bottom: 15px;
-  @include mobile{
-    height: 45px;
-  }
-}
+
 .remember-pass{
   label{
     color: $c-bl;
@@ -1213,6 +1207,14 @@
     color: #606060;
   }
 }
+.forgot-pass-md{
+  #txtForgotPass{
+    padding: 0 125px 0 23px;
+  }
+  #txtOTP_Forgot[disabled]{
+    background: #eff1f2;
+  }
+}
 
 .foot-confirmlogin{
   .cf-otp-left{
@@ -1264,6 +1266,7 @@
 .shadow-regis{
   box-shadow: 1px 18px 44px #a09d9d;
   padding: 82px 104px 83px;
+  background: #fff;
   @media (max-width: 1600px) {
     padding: 81px 104px 53px;
   }
@@ -1279,7 +1282,7 @@
 //style khoa hoc da mua ------------------------------------------------
 .main-gd{
   padding-bottom: 43px;
-  background: #F2F5F9;
+  //background: #F2F5F9;
   position: relative;
   overflow: hidden;
   @include mobile{
@@ -1287,7 +1290,7 @@
   }
 }
 .side-bar{
-  background: url("../img/bg-col-left.png") no-repeat bottom center , url("../img/bg-col-left-small.png") repeat-x top center;
+  background: url("../img/bg-col-left.png") no-repeat bottom center;
   padding: 81px 0 128px;
   min-height: 747px;
   background-size: 100%;
@@ -1341,6 +1344,7 @@
     margin-bottom: 8px;
     text-transform: uppercase;
     color: $c-wh;
+    word-break: break-word;
   }
   .change-pass{
     color: #93D7F9;
@@ -1807,12 +1811,18 @@
 }
 .sub-course{
   margin-bottom: 30px;
-  p,li,b{
+  li{
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
     font-style: normal;
   }
+  p{
+    display: block;
+    margin-bottom: 10px;
+  }
   b{
+    margin-bottom: 6px;
+    display: block;
     i{
       font-style: normal;
     }
@@ -2677,37 +2687,76 @@
 }
 .side-bar.reviewbar-left{
   padding-top: 43px;
+
+  //new
+  width: 190px;
+  position: fixed;
+  top: 150px;
+  left: calc((100% - 1200px)/2);
+  transition: all 0.3s;
 }
 .list-question-nb{
   padding: 0 51px;
-  column-count: 3;
+  //column-count: 3;
+  &:after{
+    content: '';
+    clear: both;
+    display: table;
+  }
   .item-question-nb{
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background: #fff;
+
     text-align: center;
-    color: $c-bl;
-    line-height: 18px;
-    margin-bottom: 9px;
-    cursor: pointer;
-    display: block;
-    font-size: 12px;
-    font-weight: 700;
+    width: 33.3333%;
+    float: left;
+    &:nth-child(3n+3){
+      span{
+        margin-left: auto;
+      }
+
+    }
+    &:nth-child(3n+2){
+      span{
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    }
+    span{
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #fff;
+      color: $c-bl;
+      line-height: 18px;
+      margin-bottom: 9px;
+      cursor: pointer;
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+    }
     &.active{
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.28);
-      background: $c-bl;
-      color: #fff;
+      span{
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.28);
+        background: $c-bl;
+        color: #fff;
+      }
+
     }
     &.exactly{
-      background: $c-gr;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.28);
-      color: #fff;
+      span{
+        background: $c-gr;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.28);
+        color: #fff;
+      }
+
     }
     &.wrong{
-      background: $c-red;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.28);
-      color: #fff;
+      span{
+        background: $c-red;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.28);
+        color: #fff;
+      }
+
     }
   }
 }
@@ -3390,6 +3439,7 @@
 .not-found {
   text-align: center;
   padding: 15px 0;
+  width: 100%;
   h4{
     margin-bottom: 0;
     font-size: 14px;

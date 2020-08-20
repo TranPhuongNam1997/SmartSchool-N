@@ -29,12 +29,12 @@
 footer{
   background: $c-bll url("../img/bg-foot.png");
   padding: 66px 0 33px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
 
-  //height: 398px;
-  //position: absolute;
-  //left: 0;
-  //right: 0;
-  //bottom: 0;
+
 }
 .logo-foot{
   margin-bottom: 34px;
@@ -208,6 +208,9 @@ a.btn-scrolltop {
   color: $c-bl;
   text-transform: uppercase;
   margin-bottom: 44px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .list-info{
   margin-bottom: 44px;
@@ -276,6 +279,12 @@ a.btn-scrolltop {
    }
   .name-main-user{
     cursor: pointer;
+    max-width: 260px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
   }
   &:hover.name-main-user{
 

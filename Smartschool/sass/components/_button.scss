@@ -114,16 +114,31 @@ button[data-ripple]{
   border: none;
   transition: all 0.3s;
 }
-
+.btn-blue{
+  height: 57px;
+  background: $c-bl;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  @include mobile{
+    height: 45px;
+  }
+  &[disabled]{
+    background: #5aa5e2;
+  }
+}
 
 
 .nestedCheckboxes {
   margin-bottom: 17px;
   label{
     vertical-align: baseline;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    //white-space: nowrap;
+    //overflow: hidden;
+    //text-overflow: ellipsis;
   }
 
   > label {
@@ -131,14 +146,15 @@ button[data-ripple]{
     text-transform: uppercase;
     margin-left: 5px;
     color: $c-bl;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    //white-space: nowrap;
+    //overflow: hidden;
+    //text-overflow: ellipsis;
     display: block;
   }
 
   input {
     vertical-align: middle;
+    display: none;
   }
 
   > ul {
@@ -160,9 +176,9 @@ button[data-ripple]{
         color: #3d3d3d;
         font-weight: 700;
         margin-left: 5px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        //white-space: nowrap;
+        //overflow: hidden;
+        //text-overflow: ellipsis;
         display: block;
       }
 
@@ -547,6 +563,6 @@ button[data-ripple]{
   background: #5aa5e2;
 }
 
-input[type="checkbox"]:focus:after {
-  border: 2px solid #000;
-}
+//input[type="checkbox"]:focus:after {
+//  border: 2px solid #000;
+//}

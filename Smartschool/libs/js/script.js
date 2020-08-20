@@ -125,7 +125,7 @@ $(document).ready(function () {
 
     $(window).scroll( () => {
         var windowTop = $(window).scrollTop();
-        windowTop > 100 ? $('.head-wrap').addClass('navShadow') : $('.head-wrap').removeClass('navShadow');
+        windowTop > 100 ? $('#wraper').addClass('navShadow') : $('#wraper').removeClass('navShadow');
         // windowTop > 100 ? $('ul').css('top','100px') : $('ul').css('top','160px');
     });
 
@@ -350,6 +350,8 @@ $(document).ready(function () {
             $('.show-pass2 img.img-hide-pass').hide();
         }
     });
+
+
 
     $('.wrap-help').hide();
     $('#use-help').click(function () {

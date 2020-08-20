@@ -86,21 +86,30 @@
   align-items: center;
   justify-content: flex-end;
   transition: all 0.3s;
-  &.navShadow{
-    padding: 15px 0;
-    transition: all 0.3s;
-    .block-logo{
-      .logo{
-        //width: 79px;
-        transform: scale(0.7);
-        transition: all 0.3s;
-      }
-    }
-  }
+
   @include tablet{
     padding: 17px 0;
   }
 
+}
+#wraper{
+  &.navShadow{
+    .head-wrap{
+      padding: 15px 0;
+      transition: all 0.3s;
+      .block-logo{
+        .logo{
+          //width: 79px;
+          transform: scale(0.7);
+          transition: all 0.3s;
+        }
+      }
+    }
+    .side-bar.reviewbar-left{
+      top: 106px;
+      transition: all 0.3s;
+    }
+  }
 }
 .block-logo{
   //width: 182px;
