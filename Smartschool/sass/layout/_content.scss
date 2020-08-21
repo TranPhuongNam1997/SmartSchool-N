@@ -2178,6 +2178,9 @@
   }
   .content-detail{
     margin-bottom: 15px;
+    p{
+      margin-left: 0!important;
+    }
   }
 }
 .txt-noti-answer{
@@ -2524,6 +2527,9 @@
     >label{
       margin-left: 16px;
       font-weight: 500;
+      span:first-child{
+        vertical-align: top;
+      }
     }
     &:after{
       content: '';

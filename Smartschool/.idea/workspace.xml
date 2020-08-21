@@ -21,18 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="30c15ec5-f1de-4da1-b9d8-b448bfeabd1b" name="Default Changelist" comment="/">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/bg-col-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/bg-col-left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index-update0708.html" beforeDir="false" afterPath="$PROJECT_DIR$/index-update0708.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/on-tap.html" beforeDir="false" afterPath="$PROJECT_DIR$/on-tap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/base/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/base/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_reset.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_button.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/layout/_content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_content.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_grid.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.css.map" afterDir="false" />
     </list>
@@ -164,6 +154,9 @@
       <workItem from="1597714965972" duration="7929000" />
       <workItem from="1597892664840" duration="1824000" />
       <workItem from="1597903468401" duration="11590000" />
+      <workItem from="1597973891028" duration="5732000" />
+      <workItem from="1598002368106" duration="1249000" />
+      <workItem from="1598005366947" duration="2189000" />
     </task>
     <servers />
   </component>

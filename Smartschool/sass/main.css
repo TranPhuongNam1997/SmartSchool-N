@@ -2983,6 +2983,8 @@ select {
     margin-bottom: 0; }
   .anwer-block .content-detail {
     margin-bottom: 15px; }
+    .anwer-block .content-detail p {
+      margin-left: 0 !important; }
 
 .txt-noti-answer {
   color: #000000;
@@ -3237,6 +3239,8 @@ select {
     .item-review .item-anwer > label {
       margin-left: 16px;
       font-weight: 500; }
+      .item-review .item-anwer > label span:first-child {
+        vertical-align: top; }
     .item-review .item-anwer:after {
       content: '';
       display: table;
@@ -4634,6 +4638,9 @@ button[data-ripple] {
 
 .btn-blue-box[disabled] {
   background: #5aa5e2; }
+
+.ifcorrect {
+  outline: none !important; }
 
 .slick-slide img {
   width: 100%; }

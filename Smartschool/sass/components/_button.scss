@@ -563,6 +563,10 @@ button[data-ripple]{
   background: #5aa5e2;
 }
 
+.ifcorrect{
+  outline: none!important;
+}
+
 //input[type="checkbox"]:focus:after {
 //  border: 2px solid #000;
 //}
